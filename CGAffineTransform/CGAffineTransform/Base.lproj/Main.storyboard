@@ -61,7 +61,7 @@
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vmr-q1-b6F">
                                 <rect key="frame" x="314" y="500" width="31" height="30"/>
-                                <state key="normal" title="平移"/>
+                                <state key="normal" title="混合"/>
                                 <connections>
                                     <action selector="imageViewD_Action" destination="BYZ-38-t0r" eventType="touchUpInside" id="84M-sB-3R7"/>
                                 </connections>

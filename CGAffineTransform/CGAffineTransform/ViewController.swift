@@ -20,6 +20,7 @@ class ViewController: UIViewController {
     
     var angle: CGFloat = 0
     var scale: CGFloat = 1
+    var translation: CGFloat = 0
     
     @IBAction func imageViewA_Action() {
         angle = angle + CGFloat(M_PI_4)
@@ -37,18 +38,19 @@ class ViewController: UIViewController {
     }
     
     @IBAction func imageViewC_Action() {
-        let transform = CGAffineTransform(translationX: 50, y: 50)
+        translation = translation > 200 ? translation - 10 : translation + 10
+        let transform = CGAffineTransform(translationX: translation, y: translation)
         imageViewC.layer.setAffineTransform(transform)
     }
     
     /// 混合变换
     @IBAction func imageViewD_Action() {
         
-        let transform = CGAffineTransform.identity
+        var transform = CGAffineTransform.identity
         
-        transform.rotated(by: CGFloat(M_PI_4))
-        transform.scaledBy(x: 0.5, y: 0.5)
-        transform.translatedBy(x: 100, y: 50)
+        transform = transform.scaledBy(x: 0.5, y: 0.5)
+        transform = transform.rotated(by: CGFloat(M_PI_4))
+        transform = transform.translatedBy(x: 200, y: 50)
         
         imageViewD.layer.setAffineTransform(transform)
     }
