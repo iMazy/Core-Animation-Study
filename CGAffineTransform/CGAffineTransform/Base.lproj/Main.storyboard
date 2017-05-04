@@ -1,14 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CGAffineTransform" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +21,91 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="steve_jobs-1" translatesAutoresizingMaskIntoConstraints="NO" id="t1c-wC-y86">
+                                <rect key="frame" x="30" y="50" width="134.5" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="WVu-ax-0Ec"/>
+                                    <constraint firstAttribute="width" secondItem="t1c-wC-y86" secondAttribute="height" multiplier="295:219" id="nO4-lO-LBC"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="steve_jobs-1" translatesAutoresizingMaskIntoConstraints="NO" id="nrJ-j0-Iae">
+                                <rect key="frame" x="30" y="350" width="134.5" height="100"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="steve_jobs-1" translatesAutoresizingMaskIntoConstraints="NO" id="NVT-8H-E5r">
+                                <rect key="frame" x="30" y="500" width="134.5" height="100"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vTS-ls-4wF">
+                                <rect key="frame" x="314" y="85" width="31" height="30"/>
+                                <state key="normal" title="旋转"/>
+                                <connections>
+                                    <action selector="imageViewA_Action" destination="BYZ-38-t0r" eventType="touchUpInside" id="8DT-Tk-PQj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8aB-qk-wVT">
+                                <rect key="frame" x="314" y="235" width="31" height="30"/>
+                                <state key="normal" title="缩放"/>
+                                <connections>
+                                    <action selector="imageViewB_Action" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ts3-ZI-45K"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aQD-fz-gzb">
+                                <rect key="frame" x="314" y="385" width="31" height="30"/>
+                                <state key="normal" title="平移"/>
+                                <connections>
+                                    <action selector="imageViewC_Action" destination="BYZ-38-t0r" eventType="touchUpInside" id="UsS-TM-A7g"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="steve_jobs-1" translatesAutoresizingMaskIntoConstraints="NO" id="jhC-Zv-Nr6">
+                                <rect key="frame" x="30" y="200" width="134.5" height="100"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vmr-q1-b6F">
+                                <rect key="frame" x="314" y="500" width="31" height="30"/>
+                                <state key="normal" title="平移"/>
+                                <connections>
+                                    <action selector="imageViewD_Action" destination="BYZ-38-t0r" eventType="touchUpInside" id="84M-sB-3R7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="t1c-wC-y86" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="2Mr-Hb-jRO"/>
+                            <constraint firstItem="jhC-Zv-Nr6" firstAttribute="height" secondItem="t1c-wC-y86" secondAttribute="height" id="3DR-rL-SRg"/>
+                            <constraint firstItem="NVT-8H-E5r" firstAttribute="leading" secondItem="nrJ-j0-Iae" secondAttribute="leading" id="5vr-E9-5qB"/>
+                            <constraint firstItem="nrJ-j0-Iae" firstAttribute="top" secondItem="jhC-Zv-Nr6" secondAttribute="bottom" constant="50" id="9hJ-hB-AOL"/>
+                            <constraint firstAttribute="trailing" secondItem="vTS-ls-4wF" secondAttribute="trailing" constant="30" id="IAa-OQ-feM"/>
+                            <constraint firstItem="aQD-fz-gzb" firstAttribute="trailing" secondItem="8aB-qk-wVT" secondAttribute="trailing" id="JGp-Zr-pnl"/>
+                            <constraint firstItem="vmr-q1-b6F" firstAttribute="top" secondItem="NVT-8H-E5r" secondAttribute="top" id="JIj-rc-KK1"/>
+                            <constraint firstItem="jhC-Zv-Nr6" firstAttribute="leading" secondItem="t1c-wC-y86" secondAttribute="leading" id="Ons-dg-A4C"/>
+                            <constraint firstItem="aQD-fz-gzb" firstAttribute="centerY" secondItem="nrJ-j0-Iae" secondAttribute="centerY" id="S4b-cn-fgD"/>
+                            <constraint firstItem="NVT-8H-E5r" firstAttribute="height" secondItem="nrJ-j0-Iae" secondAttribute="height" id="Tfd-x4-zuu"/>
+                            <constraint firstItem="NVT-8H-E5r" firstAttribute="top" secondItem="nrJ-j0-Iae" secondAttribute="bottom" constant="50" id="YXT-lm-HoW"/>
+                            <constraint firstItem="8aB-qk-wVT" firstAttribute="centerY" secondItem="jhC-Zv-Nr6" secondAttribute="centerY" id="Yf2-Ma-B6V"/>
+                            <constraint firstItem="nrJ-j0-Iae" firstAttribute="leading" secondItem="jhC-Zv-Nr6" secondAttribute="leading" id="ZT1-Mb-0PO"/>
+                            <constraint firstItem="NVT-8H-E5r" firstAttribute="width" secondItem="nrJ-j0-Iae" secondAttribute="width" id="fsX-Sr-soD"/>
+                            <constraint firstItem="t1c-wC-y86" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="hAX-0c-mSO"/>
+                            <constraint firstItem="jhC-Zv-Nr6" firstAttribute="top" secondItem="t1c-wC-y86" secondAttribute="bottom" constant="50" id="k0G-B1-r17"/>
+                            <constraint firstItem="8aB-qk-wVT" firstAttribute="trailing" secondItem="vTS-ls-4wF" secondAttribute="trailing" id="n0k-gQ-wHT"/>
+                            <constraint firstItem="vTS-ls-4wF" firstAttribute="centerY" secondItem="t1c-wC-y86" secondAttribute="centerY" id="nvf-vI-60B"/>
+                            <constraint firstItem="nrJ-j0-Iae" firstAttribute="width" secondItem="jhC-Zv-Nr6" secondAttribute="width" id="qcL-4o-tJV"/>
+                            <constraint firstItem="nrJ-j0-Iae" firstAttribute="height" secondItem="jhC-Zv-Nr6" secondAttribute="height" id="vOz-fi-Q6Y"/>
+                            <constraint firstItem="jhC-Zv-Nr6" firstAttribute="width" secondItem="t1c-wC-y86" secondAttribute="width" id="xA8-Xr-UNR"/>
+                            <constraint firstItem="vmr-q1-b6F" firstAttribute="trailing" secondItem="aQD-fz-gzb" secondAttribute="trailing" id="xw4-eQ-Kui"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageViewA" destination="t1c-wC-y86" id="xuB-2f-mQV"/>
+                        <outlet property="imageViewB" destination="jhC-Zv-Nr6" id="rVm-CO-UKC"/>
+                        <outlet property="imageViewC" destination="nrJ-j0-Iae" id="6sI-0w-cR5"/>
+                        <outlet property="imageViewD" destination="NVT-8H-E5r" id="B8X-XI-1Tw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="140" y="138.98050974512745"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="steve_jobs-1" width="295" height="219"/>
+    </resources>
 </document>
