@@ -16,12 +16,15 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var viewC: UIView!
 
+    @IBOutlet weak var viewD: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         drawA()
         drawB()
         drawC()
+        drawD()
     }
     
     func drawA() {
@@ -93,6 +96,24 @@ class ViewController: UIViewController {
         
         viewC.layer.addSublayer(shapeLayer)
         
+    }
+    
+    func drawD() {
+        let width = viewD.bounds.width
+        let rect = CGRect(origin: CGPoint(x: 20, y: 20), size: CGSize(width: width-40, height: width-40))
+        let radii = CGSize(width: 50, height: 50)
+        
+        let path = UIBezierPath(roundedRect: rect, byRoundingCorners: [.topLeft, .bottomLeft, .bottomRight], cornerRadii: radii)
+        
+        let shapeLayer = CAShapeLayer()
+        shapeLayer.strokeColor = UIColor.red.cgColor
+        shapeLayer.fillColor = UIColor.clear.cgColor
+        shapeLayer.lineWidth = 5
+        shapeLayer.lineJoin = kCALineJoinRound
+        shapeLayer.lineCap = kCALineCapRound
+        shapeLayer.path = path.cgPath
+        
+        viewD.layer.addSublayer(shapeLayer)
     }
 
 }

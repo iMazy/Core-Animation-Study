@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -41,18 +42,29 @@
                                     <constraint firstAttribute="height" constant="100" id="I2O-hC-VuS"/>
                                 </constraints>
                             </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FhO-wA-4bR">
+                                <rect key="frame" x="50" y="200" width="275" height="275"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="FhO-wA-4bR" secondAttribute="height" id="lye-SZ-UIh"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="0.54438677226027399" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="FhO-wA-4bR" firstAttribute="top" secondItem="Fdx-Ug-9aF" secondAttribute="bottom" constant="50" id="01n-CR-pCr"/>
                             <constraint firstItem="Fdx-Ug-9aF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="2ab-zh-hNi"/>
                             <constraint firstAttribute="trailing" secondItem="Fdx-Ug-9aF" secondAttribute="trailing" constant="20" id="L4c-Ht-mYE"/>
                             <constraint firstItem="Fdx-Ug-9aF" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="MhR-ie-KWw"/>
+                            <constraint firstAttribute="trailing" secondItem="FhO-wA-4bR" secondAttribute="trailing" constant="50" id="etU-pg-3vF"/>
+                            <constraint firstItem="FhO-wA-4bR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="50" id="udU-Ry-sns"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="viewA" destination="gi1-xa-kHc" id="JKv-bG-POW"/>
                         <outlet property="viewB" destination="mtW-4W-q6k" id="oyG-lR-YfI"/>
                         <outlet property="viewC" destination="XtK-40-eT9" id="guL-sN-Jkc"/>
+                        <outlet property="viewD" destination="FhO-wA-4bR" id="wkp-2U-d3Q"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
