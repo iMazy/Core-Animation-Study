@@ -115,7 +115,7 @@
         <!--透视投影-->
         <scene sceneID="vYG-9p-ico">
             <objects>
-                <viewController id="CNQ-jE-KC0" sceneMemberID="viewController">
+                <viewController id="CNQ-jE-KC0" customClass="M34ViewController" customModule="CATransform3D" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="k4C-8U-exS"/>
                         <viewControllerLayoutGuide type="bottom" id="GSx-kJ-sDX"/>
@@ -130,6 +130,13 @@
                                     <constraint firstAttribute="height" constant="200" id="dpV-QJ-qrG"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EaV-XN-Rve">
+                                <rect key="frame" x="293" y="209" width="62" height="30"/>
+                                <state key="normal" title="投影变换"/>
+                                <connections>
+                                    <action selector="m34Action" destination="CNQ-jE-KC0" eventType="touchUpInside" id="s5R-Kv-Lks"/>
+                                </connections>
+                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="steve_jobs" translatesAutoresizingMaskIntoConstraints="NO" id="ioQ-EV-bU5">
                                 <rect key="frame" x="20" y="174" width="134.5" height="100"/>
                                 <constraints>
@@ -140,6 +147,8 @@
                         </subviews>
                         <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="EaV-XN-Rve" secondAttribute="trailing" constant="20" id="Zfg-PU-jec"/>
+                            <constraint firstItem="EaV-XN-Rve" firstAttribute="centerY" secondItem="ioQ-EV-bU5" secondAttribute="centerY" id="d0w-0R-Kpy"/>
                             <constraint firstItem="GSx-kJ-sDX" firstAttribute="top" secondItem="nHn-Eb-lkd" secondAttribute="bottom" id="hKw-8W-oys"/>
                             <constraint firstItem="ioQ-EV-bU5" firstAttribute="top" secondItem="k4C-8U-exS" secondAttribute="bottom" constant="110" id="hd6-7U-yNk"/>
                             <constraint firstAttribute="trailing" secondItem="nHn-Eb-lkd" secondAttribute="trailing" id="oa3-jw-aem"/>
@@ -148,6 +157,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="透视投影" id="Szw-BP-Amf"/>
+                    <connections>
+                        <outlet property="imageView" destination="ioQ-EV-bU5" id="fzE-0C-n2V"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bYh-z5-gix" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
