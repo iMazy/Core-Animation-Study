@@ -1,14 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CATransform3D" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +21,91 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="steve_jobs" translatesAutoresizingMaskIntoConstraints="NO" id="icD-mc-7iQ">
+                                <rect key="frame" x="30" y="50" width="134.5" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="0A2-z9-diZ"/>
+                                    <constraint firstAttribute="width" secondItem="icD-mc-7iQ" secondAttribute="height" multiplier="295:219" id="Vwa-E0-ei5"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="steve_jobs" translatesAutoresizingMaskIntoConstraints="NO" id="zZN-Ri-Crp">
+                                <rect key="frame" x="30" y="350" width="134.5" height="100"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="steve_jobs" translatesAutoresizingMaskIntoConstraints="NO" id="Pol-7K-F3M">
+                                <rect key="frame" x="30" y="500" width="134.5" height="100"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="liO-nx-3ZP">
+                                <rect key="frame" x="314" y="85" width="31" height="30"/>
+                                <state key="normal" title="旋转"/>
+                                <connections>
+                                    <action selector="rotationAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="EX4-K6-JrV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FbL-5x-2PC">
+                                <rect key="frame" x="314" y="235" width="31" height="30"/>
+                                <state key="normal" title="缩放"/>
+                                <connections>
+                                    <action selector="scaleAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="nej-pa-1yU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L7P-fo-deD">
+                                <rect key="frame" x="314" y="385" width="31" height="30"/>
+                                <state key="normal" title="平移"/>
+                                <connections>
+                                    <action selector="translationAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="eF2-sc-eeW"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="steve_jobs" translatesAutoresizingMaskIntoConstraints="NO" id="nqI-Gd-KMB">
+                                <rect key="frame" x="30" y="200" width="134.5" height="100"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rJB-cB-TAy">
+                                <rect key="frame" x="314" y="500" width="31" height="30"/>
+                                <state key="normal" title="混合"/>
+                                <connections>
+                                    <action selector="multyAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="BrZ-fr-g0q"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="icD-mc-7iQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="1sT-Je-BF0"/>
+                            <constraint firstItem="FbL-5x-2PC" firstAttribute="trailing" secondItem="liO-nx-3ZP" secondAttribute="trailing" id="24w-V4-mM1"/>
+                            <constraint firstItem="nqI-Gd-KMB" firstAttribute="width" secondItem="icD-mc-7iQ" secondAttribute="width" id="2gL-FV-7Iq"/>
+                            <constraint firstItem="nqI-Gd-KMB" firstAttribute="top" secondItem="icD-mc-7iQ" secondAttribute="bottom" constant="50" id="3Dg-5s-zzO"/>
+                            <constraint firstItem="rJB-cB-TAy" firstAttribute="top" secondItem="Pol-7K-F3M" secondAttribute="top" id="6Ur-g6-4HQ"/>
+                            <constraint firstAttribute="trailing" secondItem="liO-nx-3ZP" secondAttribute="trailing" constant="30" id="BFK-ui-fvY"/>
+                            <constraint firstItem="Pol-7K-F3M" firstAttribute="top" secondItem="zZN-Ri-Crp" secondAttribute="bottom" constant="50" id="BkL-HW-I4g"/>
+                            <constraint firstItem="zZN-Ri-Crp" firstAttribute="top" secondItem="nqI-Gd-KMB" secondAttribute="bottom" constant="50" id="Ep5-L6-85k"/>
+                            <constraint firstItem="nqI-Gd-KMB" firstAttribute="height" secondItem="icD-mc-7iQ" secondAttribute="height" id="KQ9-sU-L7h"/>
+                            <constraint firstItem="L7P-fo-deD" firstAttribute="centerY" secondItem="zZN-Ri-Crp" secondAttribute="centerY" id="NCo-4q-f0l"/>
+                            <constraint firstItem="L7P-fo-deD" firstAttribute="trailing" secondItem="FbL-5x-2PC" secondAttribute="trailing" id="Pgj-mL-DFh"/>
+                            <constraint firstItem="zZN-Ri-Crp" firstAttribute="height" secondItem="nqI-Gd-KMB" secondAttribute="height" id="Ym6-ta-pms"/>
+                            <constraint firstItem="zZN-Ri-Crp" firstAttribute="width" secondItem="nqI-Gd-KMB" secondAttribute="width" id="b6R-RF-tJP"/>
+                            <constraint firstItem="rJB-cB-TAy" firstAttribute="trailing" secondItem="L7P-fo-deD" secondAttribute="trailing" id="c4n-Y6-Cyj"/>
+                            <constraint firstItem="nqI-Gd-KMB" firstAttribute="leading" secondItem="icD-mc-7iQ" secondAttribute="leading" id="fxB-PD-oFx"/>
+                            <constraint firstItem="Pol-7K-F3M" firstAttribute="width" secondItem="zZN-Ri-Crp" secondAttribute="width" id="gdx-3b-GE8"/>
+                            <constraint firstItem="liO-nx-3ZP" firstAttribute="centerY" secondItem="icD-mc-7iQ" secondAttribute="centerY" id="hOx-dU-KWn"/>
+                            <constraint firstItem="FbL-5x-2PC" firstAttribute="centerY" secondItem="nqI-Gd-KMB" secondAttribute="centerY" id="hbx-JQ-Pir"/>
+                            <constraint firstItem="icD-mc-7iQ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="joE-ZO-fkE"/>
+                            <constraint firstItem="Pol-7K-F3M" firstAttribute="height" secondItem="zZN-Ri-Crp" secondAttribute="height" id="k5H-n9-39K"/>
+                            <constraint firstItem="zZN-Ri-Crp" firstAttribute="leading" secondItem="nqI-Gd-KMB" secondAttribute="leading" id="pBk-CT-Tzi"/>
+                            <constraint firstItem="icD-mc-7iQ" firstAttribute="width" secondItem="icD-mc-7iQ" secondAttribute="height" multiplier="295:219" id="qI6-0d-Nen"/>
+                            <constraint firstItem="Pol-7K-F3M" firstAttribute="leading" secondItem="zZN-Ri-Crp" secondAttribute="leading" id="w8J-Ig-klF"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageViewA" destination="icD-mc-7iQ" id="b80-z3-hgI"/>
+                        <outlet property="imageViewB" destination="nqI-Gd-KMB" id="RHn-4i-F0q"/>
+                        <outlet property="imageViewC" destination="zZN-Ri-Crp" id="rzr-kC-tQY"/>
+                        <outlet property="imageViewD" destination="Pol-7K-F3M" id="AaE-RS-GsU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="steve_jobs" width="295" height="219"/>
+    </resources>
 </document>
