@@ -51,6 +51,14 @@ class ViewController: UIViewController {
         textLayer.string = text
         
         
+        
+        let layerLabel = LayerLabel()
+        layerLabel.text = "知乎上有个问题：年轻时候最应该注意的事情是什么？点赞最高的答案是：由于害怕而什么都没有做。"
+        layerLabel.textColor = UIColor.red
+        layerLabel.font = UIFont.systemFont(ofSize: 17)
+        layerLabel.frame = CGRect(x: 20, y: 400, width: 300, height: 100)
+        view.addSubview(layerLabel)
+        
     }
 
 
