@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		64A9DC3A1EC0560B0021D930 /* Simulator Screen Shot 2017年5月8日 下午3.28.59.png in Resources */ = {isa = PBXBuildFile; fileRef = 64A9DC391EC0560B0021D930 /* Simulator Screen Shot 2017年5月8日 下午3.28.59.png */; };
 		64F677E41EC00A5F001D6DBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F677E31EC00A5F001D6DBB /* AppDelegate.swift */; };
 		64F677E61EC00A5F001D6DBB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F677E51EC00A5F001D6DBB /* ViewController.swift */; };
 		64F677E91EC00A5F001D6DBB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64F677E71EC00A5F001D6DBB /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		64A9DC391EC0560B0021D930 /* Simulator Screen Shot 2017年5月8日 下午3.28.59.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Simulator Screen Shot 2017年5月8日 下午3.28.59.png"; sourceTree = "<group>"; };
 		64F677E01EC00A5F001D6DBB /* CreateCube.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CreateCube.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64F677E31EC00A5F001D6DBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		64F677E51EC00A5F001D6DBB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 				64F677E71EC00A5F001D6DBB /* Main.storyboard */,
 				64F677EA1EC00A5F001D6DBB /* Assets.xcassets */,
 				64F677EC1EC00A5F001D6DBB /* LaunchScreen.storyboard */,
+				64A9DC391EC0560B0021D930 /* Simulator Screen Shot 2017年5月8日 下午3.28.59.png */,
 				64F677EF1EC00A5F001D6DBB /* Info.plist */,
 			);
 			path = CreateCube;
@@ -131,6 +134,7 @@
 			files = (
 				64F677EE1EC00A5F001D6DBB /* LaunchScreen.storyboard in Resources */,
 				64F677EB1EC00A5F001D6DBB /* Assets.xcassets in Resources */,
+				64A9DC3A1EC0560B0021D930 /* Simulator Screen Shot 2017年5月8日 下午3.28.59.png in Resources */,
 				64F677E91EC00A5F001D6DBB /* Main.storyboard in Resources */,
 				64F677F81EC00AB6001D6DBB /* FaceView.xib in Resources */,
 			);
@@ -305,6 +309,7 @@
 				64F677F41EC00A5F001D6DBB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
