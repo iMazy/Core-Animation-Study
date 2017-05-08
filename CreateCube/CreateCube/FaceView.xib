@@ -12,124 +12,109 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="c2q-Q8-9Gz" customClass="FaceView" customModule="CreateCube" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="166" height="149"/>
+            <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LWo-tD-2Ee">
-                    <rect key="frame" x="68" y="48.5" width="30" height="51"/>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LWo-tD-2Ee">
+                    <rect key="frame" x="85" y="75" width="30" height="51"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="32"/>
                     <state key="normal" title="1"/>
                 </button>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-            <constraints>
-                <constraint firstItem="LWo-tD-2Ee" firstAttribute="centerY" secondItem="c2q-Q8-9Gz" secondAttribute="centerY" id="JrC-39-Srg"/>
-                <constraint firstItem="LWo-tD-2Ee" firstAttribute="centerX" secondItem="c2q-Q8-9Gz" secondAttribute="centerX" id="Nvp-LZ-oHT"/>
-            </constraints>
+            <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
             <nil key="simulatedStatusBarMetrics"/>
             <nil key="simulatedTopBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="-225" y="-339.5"/>
+            <point key="canvasLocation" x="-225" y="-390"/>
         </view>
         <view contentMode="scaleToFill" id="YEH-QQ-bYO" customClass="FaceView" customModule="CreateCube" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="166" height="149"/>
-            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S1Z-H8-JKk">
-                    <rect key="frame" x="68" y="49" width="30" height="51"/>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S1Z-H8-JKk">
+                    <rect key="frame" x="85" y="75" width="30" height="51"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="32"/>
                     <state key="normal" title="2"/>
                 </button>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-            <constraints>
-                <constraint firstItem="S1Z-H8-JKk" firstAttribute="centerY" secondItem="YEH-QQ-bYO" secondAttribute="centerY" id="0J1-nw-xNq"/>
-                <constraint firstItem="S1Z-H8-JKk" firstAttribute="centerX" secondItem="YEH-QQ-bYO" secondAttribute="centerX" id="sXc-Uw-U1w"/>
-            </constraints>
+            <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
             <nil key="simulatedStatusBarMetrics"/>
             <nil key="simulatedTopBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="22" y="-340"/>
+            <point key="canvasLocation" x="34" y="-390"/>
         </view>
         <view contentMode="scaleToFill" id="TIH-08-Uz0" customClass="FaceView" customModule="CreateCube" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="166" height="149"/>
-            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nz9-ro-iTX">
-                    <rect key="frame" x="68" y="49" width="30" height="51"/>
-                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="32"/>
-                    <state key="normal" title="3"/>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nz9-ro-iTX">
+                    <rect key="frame" x="60" y="60" width="80" height="80"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.60000002384185791" green="0.40000000596046448" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                    <state key="normal" title="3">
+                        <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
                 </button>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-            <constraints>
-                <constraint firstItem="nz9-ro-iTX" firstAttribute="centerY" secondItem="TIH-08-Uz0" secondAttribute="centerY" id="05N-9N-esJ"/>
-                <constraint firstItem="nz9-ro-iTX" firstAttribute="centerX" secondItem="TIH-08-Uz0" secondAttribute="centerX" id="YyM-O3-s8e"/>
-            </constraints>
+            <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
             <nil key="simulatedStatusBarMetrics"/>
             <nil key="simulatedTopBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="-225" y="-127"/>
+            <point key="canvasLocation" x="-225" y="-128"/>
         </view>
         <view contentMode="scaleToFill" id="dQU-dW-wmo" customClass="FaceView" customModule="CreateCube" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="166" height="149"/>
+            <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Mf-Qo-OcE">
-                    <rect key="frame" x="68" y="49" width="30" height="51"/>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Mf-Qo-OcE">
+                    <rect key="frame" x="85" y="75" width="30" height="51"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="32"/>
                     <state key="normal" title="4"/>
                 </button>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-            <constraints>
-                <constraint firstItem="9Mf-Qo-OcE" firstAttribute="centerY" secondItem="dQU-dW-wmo" secondAttribute="centerY" id="azj-dd-qxK"/>
-                <constraint firstItem="9Mf-Qo-OcE" firstAttribute="centerX" secondItem="dQU-dW-wmo" secondAttribute="centerX" id="oPT-Sb-tK8"/>
-            </constraints>
+            <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
             <nil key="simulatedStatusBarMetrics"/>
             <nil key="simulatedTopBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="22" y="-128"/>
+            <point key="canvasLocation" x="34" y="-128"/>
         </view>
         <view contentMode="scaleToFill" id="ZGC-aw-moI" customClass="FaceView" customModule="CreateCube" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="166" height="149"/>
+            <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="teh-N3-O7V">
-                    <rect key="frame" x="68" y="49" width="30" height="51"/>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="teh-N3-O7V">
+                    <rect key="frame" x="85" y="75" width="30" height="51"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="32"/>
                     <state key="normal" title="5"/>
                 </button>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-            <constraints>
-                <constraint firstItem="teh-N3-O7V" firstAttribute="centerY" secondItem="ZGC-aw-moI" secondAttribute="centerY" id="DoS-2A-MKt"/>
-                <constraint firstItem="teh-N3-O7V" firstAttribute="centerX" secondItem="ZGC-aw-moI" secondAttribute="centerX" id="rdb-nw-e1H"/>
-            </constraints>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
             <nil key="simulatedStatusBarMetrics"/>
             <nil key="simulatedTopBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="-225" y="90"/>
+            <point key="canvasLocation" x="-225" y="133"/>
         </view>
         <view contentMode="scaleToFill" id="K2U-vA-c1D" customClass="FaceView" customModule="CreateCube" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="166" height="149"/>
+            <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b4k-7a-Bkx">
-                    <rect key="frame" x="68" y="49" width="30" height="51"/>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b4k-7a-Bkx">
+                    <rect key="frame" x="85" y="75" width="30" height="51"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="32"/>
                     <state key="normal" title="6"/>
                 </button>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-            <constraints>
-                <constraint firstItem="b4k-7a-Bkx" firstAttribute="centerX" secondItem="K2U-vA-c1D" secondAttribute="centerX" id="9AV-AK-pnp"/>
-                <constraint firstItem="b4k-7a-Bkx" firstAttribute="centerY" secondItem="K2U-vA-c1D" secondAttribute="centerY" id="eYK-RQ-w8m"/>
-            </constraints>
+            <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
             <nil key="simulatedStatusBarMetrics"/>
             <nil key="simulatedTopBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="22" y="90"/>
+            <point key="canvasLocation" x="34" y="133"/>
         </view>
     </objects>
 </document>
