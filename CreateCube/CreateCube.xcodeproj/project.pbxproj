@@ -12,6 +12,8 @@
 		64F677E91EC00A5F001D6DBB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64F677E71EC00A5F001D6DBB /* Main.storyboard */; };
 		64F677EB1EC00A5F001D6DBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64F677EA1EC00A5F001D6DBB /* Assets.xcassets */; };
 		64F677EE1EC00A5F001D6DBB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64F677EC1EC00A5F001D6DBB /* LaunchScreen.storyboard */; };
+		64F677F61EC00AAA001D6DBB /* FaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F677F51EC00AAA001D6DBB /* FaceView.swift */; };
+		64F677F81EC00AB6001D6DBB /* FaceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64F677F71EC00AB6001D6DBB /* FaceView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		64F677EA1EC00A5F001D6DBB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		64F677ED1EC00A5F001D6DBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		64F677EF1EC00A5F001D6DBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64F677F51EC00AAA001D6DBB /* FaceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceView.swift; sourceTree = "<group>"; };
+		64F677F71EC00AB6001D6DBB /* FaceView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FaceView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 			children = (
 				64F677E31EC00A5F001D6DBB /* AppDelegate.swift */,
 				64F677E51EC00A5F001D6DBB /* ViewController.swift */,
+				64F677F51EC00AAA001D6DBB /* FaceView.swift */,
+				64F677F71EC00AB6001D6DBB /* FaceView.xib */,
 				64F677E71EC00A5F001D6DBB /* Main.storyboard */,
 				64F677EA1EC00A5F001D6DBB /* Assets.xcassets */,
 				64F677EC1EC00A5F001D6DBB /* LaunchScreen.storyboard */,
@@ -126,6 +132,7 @@
 				64F677EE1EC00A5F001D6DBB /* LaunchScreen.storyboard in Resources */,
 				64F677EB1EC00A5F001D6DBB /* Assets.xcassets in Resources */,
 				64F677E91EC00A5F001D6DBB /* Main.storyboard in Resources */,
+				64F677F81EC00AB6001D6DBB /* FaceView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +145,7 @@
 			files = (
 				64F677E61EC00A5F001D6DBB /* ViewController.swift in Sources */,
 				64F677E41EC00A5F001D6DBB /* AppDelegate.swift in Sources */,
+				64F677F61EC00AAA001D6DBB /* FaceView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
