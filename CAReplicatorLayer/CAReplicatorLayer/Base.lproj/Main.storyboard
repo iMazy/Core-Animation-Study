@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="dEm-JI-G4a">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Repeating Layers-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CAReplicatorLayer" customModuleProvider="target" sceneMemberID="viewController">
@@ -22,7 +22,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k4z-js-Dlx">
-                                <rect key="frame" x="152.5" y="70" width="70" height="70"/>
+                                <rect key="frame" x="152.5" y="84" width="70" height="70"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="Hpu-Xb-Yx0"/>
@@ -42,10 +42,17 @@
                         <constraints>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="emD-GH-494" secondAttribute="bottom" constant="160" id="EdM-2L-CuL"/>
                             <constraint firstItem="emD-GH-494" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KLL-4d-jeM"/>
-                            <constraint firstItem="k4z-js-Dlx" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="eNu-UZ-tqX"/>
+                            <constraint firstItem="k4z-js-Dlx" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="eNu-UZ-tqX"/>
                             <constraint firstItem="k4z-js-Dlx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mLa-N8-ykM"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Repeating Layers" id="KPk-uB-foJ">
+                        <barButtonItem key="rightBarButtonItem" title="反射" id="tBd-ng-MoP">
+                            <connections>
+                                <segue destination="Eib-T9-vNK" kind="show" id="L2x-8j-IO0"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="containerView" destination="k4z-js-Dlx" id="QUB-de-b9i"/>
                         <outlet property="indicitorView" destination="emD-GH-494" id="TOK-1q-euM"/>
@@ -53,7 +60,68 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="975.20000000000005" y="38.23088455772114"/>
+        </scene>
+        <!--镜像-->
+        <scene sceneID="toK-OF-pYK">
+            <objects>
+                <viewController id="Eib-T9-vNK" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wTU-aH-PiO"/>
+                        <viewControllerLayoutGuide type="bottom" id="lqg-l6-ta8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GIL-Sm-S6k">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dYr-pb-TP9" customClass="ReflectionView" customModule="CAReplicatorLayer" customModuleProvider="target">
+                                <rect key="frame" x="39.5" y="328" width="295" height="219"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="steve_jobs" translatesAutoresizingMaskIntoConstraints="NO" id="wyR-pC-fHd">
+                                        <rect key="frame" x="0.0" y="0.0" width="295" height="219"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="wyR-pC-fHd" firstAttribute="top" secondItem="dYr-pb-TP9" secondAttribute="top" id="0go-iH-f6i"/>
+                                    <constraint firstItem="wyR-pC-fHd" firstAttribute="leading" secondItem="dYr-pb-TP9" secondAttribute="leading" id="FeJ-fj-Ivn"/>
+                                    <constraint firstAttribute="trailing" secondItem="wyR-pC-fHd" secondAttribute="trailing" id="Zku-m0-9SR"/>
+                                    <constraint firstAttribute="bottom" secondItem="wyR-pC-fHd" secondAttribute="bottom" id="hFn-Od-b4m"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="0.55120933219178081" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="lqg-l6-ta8" firstAttribute="top" secondItem="dYr-pb-TP9" secondAttribute="bottom" constant="120" id="6nN-FB-t4A"/>
+                            <constraint firstItem="dYr-pb-TP9" firstAttribute="centerX" secondItem="GIL-Sm-S6k" secondAttribute="centerX" id="Uyz-JB-JbU"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="镜像" id="gAx-nX-c7e"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YnY-Wk-gj3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1649" y="31"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="hgM-Ua-RZS">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dEm-JI-G4a" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZmS-So-PbD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="oha-m1-O3T"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oXQ-N2-XkE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
             <point key="canvasLocation" x="36" y="38.23088455772114"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="steve_jobs" width="295" height="219"/>
+    </resources>
 </document>

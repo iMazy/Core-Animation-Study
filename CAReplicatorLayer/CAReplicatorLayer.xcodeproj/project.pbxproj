@@ -12,6 +12,7 @@
 		6417EA791EC19FA000F643A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6417EA771EC19FA000F643A4 /* Main.storyboard */; };
 		6417EA7B1EC19FA000F643A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6417EA7A1EC19FA000F643A4 /* Assets.xcassets */; };
 		6417EA7E1EC19FA000F643A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6417EA7C1EC19FA000F643A4 /* LaunchScreen.storyboard */; };
+		6417EA861EC1A9B300F643A4 /* ReflectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6417EA851EC1A9B300F643A4 /* ReflectionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		6417EA7A1EC19FA000F643A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6417EA7D1EC19FA000F643A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6417EA7F1EC19FA000F643A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6417EA851EC1A9B300F643A4 /* ReflectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReflectionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				6417EA731EC19FA000F643A4 /* AppDelegate.swift */,
 				6417EA751EC19FA000F643A4 /* ViewController.swift */,
+				6417EA851EC1A9B300F643A4 /* ReflectionView.swift */,
 				6417EA771EC19FA000F643A4 /* Main.storyboard */,
 				6417EA7A1EC19FA000F643A4 /* Assets.xcassets */,
 				6417EA7C1EC19FA000F643A4 /* LaunchScreen.storyboard */,
@@ -137,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6417EA761EC19FA000F643A4 /* ViewController.swift in Sources */,
+				6417EA861EC1A9B300F643A4 /* ReflectionView.swift in Sources */,
 				6417EA741EC19FA000F643A4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
