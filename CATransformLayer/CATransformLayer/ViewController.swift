@@ -20,13 +20,14 @@ class ViewController: UIViewController {
         containerView.layer.sublayerTransform = pt
         
         var c1t = CATransform3DIdentity
-        c1t = CATransform3DTranslate(c1t, -100, 0, 0)
+        c1t = CATransform3DTranslate(c1t, 0, 100, 0)
+        c1t = CATransform3DRotate(c1t, CGFloat(M_PI_4), 0, 1, 0)
         let cube1 = cubeWithTransform(transform: c1t)
         
         containerView.layer.addSublayer(cube1)
         
         var c2t = CATransform3DIdentity
-        c2t = CATransform3DTranslate(c2t, 100, 0, 0)
+        c2t = CATransform3DTranslate(c2t, 0, -100, 0)
         c2t = CATransform3DRotate(c2t, CGFloat(-M_PI_4), 1, 0, 0)
         c2t = CATransform3DRotate(c2t, CGFloat(-M_PI_4), 0, 1, 0)
         let cube2 = cubeWithTransform(transform: c2t)

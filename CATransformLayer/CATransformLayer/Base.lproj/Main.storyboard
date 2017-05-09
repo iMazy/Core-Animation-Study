@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -24,15 +23,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0c6-Pq-DKm">
-                                <rect key="frame" x="36" y="70" width="303" height="303"/>
+                                <rect key="frame" x="36" y="70" width="303" height="547"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="0c6-Pq-DKm" secondAttribute="height" id="MaS-Gg-sP1"/>
-                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="0c6-Pq-DKm" secondAttribute="bottom" constant="50" id="aex-fw-iQb"/>
                             <constraint firstItem="0c6-Pq-DKm" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="crj-Cb-8GA"/>
                             <constraint firstItem="0c6-Pq-DKm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="hh9-5T-srQ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="0c6-Pq-DKm" secondAttribute="trailing" constant="20" id="hj4-cU-IhM"/>
