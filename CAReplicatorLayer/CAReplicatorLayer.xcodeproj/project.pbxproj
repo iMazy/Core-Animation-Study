@@ -13,6 +13,8 @@
 		6417EA7B1EC19FA000F643A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6417EA7A1EC19FA000F643A4 /* Assets.xcassets */; };
 		6417EA7E1EC19FA000F643A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6417EA7C1EC19FA000F643A4 /* LaunchScreen.storyboard */; };
 		6417EA861EC1A9B300F643A4 /* ReflectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6417EA851EC1A9B300F643A4 /* ReflectionView.swift */; };
+		6417EA881EC1B13600F643A4 /* Simulator Screen Shot 2017年5月9日 下午3.33.13.png in Resources */ = {isa = PBXBuildFile; fileRef = 6417EA871EC1B13600F643A4 /* Simulator Screen Shot 2017年5月9日 下午3.33.13.png */; };
+		6417EA8A1EC1B13A00F643A4 /* Simulator Screen Shot 2017年5月9日 下午4.10.34.png in Resources */ = {isa = PBXBuildFile; fileRef = 6417EA891EC1B13A00F643A4 /* Simulator Screen Shot 2017年5月9日 下午4.10.34.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		6417EA7D1EC19FA000F643A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6417EA7F1EC19FA000F643A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6417EA851EC1A9B300F643A4 /* ReflectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReflectionView.swift; sourceTree = "<group>"; };
+		6417EA871EC1B13600F643A4 /* Simulator Screen Shot 2017年5月9日 下午3.33.13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Simulator Screen Shot 2017年5月9日 下午3.33.13.png"; sourceTree = "<group>"; };
+		6417EA891EC1B13A00F643A4 /* Simulator Screen Shot 2017年5月9日 下午4.10.34.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Simulator Screen Shot 2017年5月9日 下午4.10.34.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				6417EA751EC19FA000F643A4 /* ViewController.swift */,
 				6417EA851EC1A9B300F643A4 /* ReflectionView.swift */,
 				6417EA771EC19FA000F643A4 /* Main.storyboard */,
+				6417EA871EC1B13600F643A4 /* Simulator Screen Shot 2017年5月9日 下午3.33.13.png */,
+				6417EA891EC1B13A00F643A4 /* Simulator Screen Shot 2017年5月9日 下午4.10.34.png */,
 				6417EA7A1EC19FA000F643A4 /* Assets.xcassets */,
 				6417EA7C1EC19FA000F643A4 /* LaunchScreen.storyboard */,
 				6417EA7F1EC19FA000F643A4 /* Info.plist */,
@@ -126,9 +132,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6417EA8A1EC1B13A00F643A4 /* Simulator Screen Shot 2017年5月9日 下午4.10.34.png in Resources */,
 				6417EA7E1EC19FA000F643A4 /* LaunchScreen.storyboard in Resources */,
 				6417EA7B1EC19FA000F643A4 /* Assets.xcassets in Resources */,
 				6417EA791EC19FA000F643A4 /* Main.storyboard in Resources */,
+				6417EA881EC1B13600F643A4 /* Simulator Screen Shot 2017年5月9日 下午3.33.13.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

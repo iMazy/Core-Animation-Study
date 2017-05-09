@@ -39,9 +39,9 @@ class ReflectionView: UIView {
         newLayer.instanceCount = 2
         
         var transform = CATransform3DIdentity
-        let verticalOffset = bounds.size.height - 30
+        let verticalOffset = bounds.size.height - 50
         transform = CATransform3DTranslate(transform, 0, verticalOffset, 0)
-        transform = CATransform3DRotate(transform, CGFloat(M_PI_4), 1, 0, 0)
+        transform = CATransform3DRotate(transform, CGFloat(M_PI_2/3*2), 1, 0, 0)
         transform = CATransform3DScale(transform, 1, -1, 0)
         newLayer.instanceTransform = transform
         

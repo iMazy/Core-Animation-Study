@@ -75,7 +75,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dYr-pb-TP9" customClass="ReflectionView" customModule="CAReplicatorLayer" customModuleProvider="target">
-                                <rect key="frame" x="39.5" y="328" width="295" height="219"/>
+                                <rect key="frame" x="39.5" y="198" width="295" height="219"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="steve_jobs" translatesAutoresizingMaskIntoConstraints="NO" id="wyR-pC-fHd">
                                         <rect key="frame" x="0.0" y="0.0" width="295" height="219"/>
@@ -90,9 +90,9 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="0.55120933219178081" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="lqg-l6-ta8" firstAttribute="top" secondItem="dYr-pb-TP9" secondAttribute="bottom" constant="120" id="6nN-FB-t4A"/>
+                            <constraint firstItem="lqg-l6-ta8" firstAttribute="top" secondItem="dYr-pb-TP9" secondAttribute="bottom" constant="250" id="6nN-FB-t4A"/>
                             <constraint firstItem="dYr-pb-TP9" firstAttribute="centerX" secondItem="GIL-Sm-S6k" secondAttribute="centerX" id="Uyz-JB-JbU"/>
                         </constraints>
                     </view>
