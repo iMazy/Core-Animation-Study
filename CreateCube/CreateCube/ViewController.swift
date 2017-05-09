@@ -11,7 +11,6 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var containerView: UIView!
-    var faces: [FaceView] = [FaceView]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,8 +21,6 @@ class ViewController: UIViewController {
         let face4 = Bundle.main.loadNibNamed("FaceView", owner: nil, options: nil)?[3] as! FaceView
         let face5 = Bundle.main.loadNibNamed("FaceView", owner: nil, options: nil)?[4] as! FaceView
         let face6 = Bundle.main.loadNibNamed("FaceView", owner: nil, options: nil)?[5] as! FaceView
-        
-        faces.append(contentsOf: [face1,face2,face3,face4,face5,face6])
         
         var perspective = CATransform3DIdentity
         perspective.m34 = -1.0/500
@@ -40,7 +37,7 @@ class ViewController: UIViewController {
         // add cube face2
         transform = CATransform3DMakeTranslation(distance, 0, 0)
         transform = CATransform3DRotate(transform, CGFloat(M_PI_2), 0, 1, 0)
-        addFace(with: faces[1], transform: transform)
+        addFace(with: face2, transform: transform)
         
         // add cube face3
         transform = CATransform3DMakeTranslation(0, -distance, 0)
