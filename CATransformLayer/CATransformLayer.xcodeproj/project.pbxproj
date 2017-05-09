@@ -12,6 +12,7 @@
 		6417E9F31EC15E9000F643A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6417E9F11EC15E9000F643A4 /* Main.storyboard */; };
 		6417E9F51EC15E9000F643A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6417E9F41EC15E9000F643A4 /* Assets.xcassets */; };
 		6417E9F81EC15E9000F643A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6417E9F61EC15E9000F643A4 /* LaunchScreen.storyboard */; };
+		6417EA231EC1758500F643A4 /* Simulator Screen Shot 2017年5月9日 上午11.52.15.png in Resources */ = {isa = PBXBuildFile; fileRef = 6417EA221EC1758500F643A4 /* Simulator Screen Shot 2017年5月9日 上午11.52.15.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		6417E9F41EC15E9000F643A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6417E9F71EC15E9000F643A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6417E9F91EC15E9000F643A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6417EA221EC1758500F643A4 /* Simulator Screen Shot 2017年5月9日 上午11.52.15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Simulator Screen Shot 2017年5月9日 上午11.52.15.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				6417E9ED1EC15E9000F643A4 /* AppDelegate.swift */,
 				6417E9EF1EC15E9000F643A4 /* ViewController.swift */,
 				6417E9F11EC15E9000F643A4 /* Main.storyboard */,
+				6417EA221EC1758500F643A4 /* Simulator Screen Shot 2017年5月9日 上午11.52.15.png */,
 				6417E9F41EC15E9000F643A4 /* Assets.xcassets */,
 				6417E9F61EC15E9000F643A4 /* LaunchScreen.storyboard */,
 				6417E9F91EC15E9000F643A4 /* Info.plist */,
@@ -124,6 +127,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6417E9F81EC15E9000F643A4 /* LaunchScreen.storyboard in Resources */,
+				6417EA231EC1758500F643A4 /* Simulator Screen Shot 2017年5月9日 上午11.52.15.png in Resources */,
 				6417E9F51EC15E9000F643A4 /* Assets.xcassets in Resources */,
 				6417E9F31EC15E9000F643A4 /* Main.storyboard in Resources */,
 			);
