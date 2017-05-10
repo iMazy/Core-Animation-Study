@@ -12,6 +12,7 @@
 		6405AC961EC2A1100089FCCF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6405AC941EC2A1100089FCCF /* Main.storyboard */; };
 		6405AC981EC2A1100089FCCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6405AC971EC2A1100089FCCF /* Assets.xcassets */; };
 		6405AC9B1EC2A1100089FCCF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6405AC991EC2A1100089FCCF /* LaunchScreen.storyboard */; };
+		6405ACA31EC2A1620089FCCF /* ScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6405ACA21EC2A1620089FCCF /* ScrollView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		6405AC971EC2A1100089FCCF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6405AC9A1EC2A1100089FCCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6405AC9C1EC2A1100089FCCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6405ACA21EC2A1620089FCCF /* ScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				6405AC901EC2A1100089FCCF /* AppDelegate.swift */,
 				6405AC921EC2A1100089FCCF /* ViewController.swift */,
+				6405ACA21EC2A1620089FCCF /* ScrollView.swift */,
 				6405AC941EC2A1100089FCCF /* Main.storyboard */,
 				6405AC971EC2A1100089FCCF /* Assets.xcassets */,
 				6405AC991EC2A1100089FCCF /* LaunchScreen.storyboard */,
@@ -138,6 +141,7 @@
 			files = (
 				6405AC931EC2A1100089FCCF /* ViewController.swift in Sources */,
 				6405AC911EC2A1100089FCCF /* AppDelegate.swift in Sources */,
+				6405ACA31EC2A1620089FCCF /* ScrollView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
