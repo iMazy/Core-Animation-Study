@@ -14,6 +14,9 @@
 		647490C01EBC1204007F3A62 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 647490BE1EBC1204007F3A62 /* LaunchScreen.storyboard */; };
 		647490C81EBC1DFD007F3A62 /* M34ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647490C71EBC1DFD007F3A62 /* M34ViewController.swift */; };
 		647490CA1EBC2469007F3A62 /* SublayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647490C91EBC2469007F3A62 /* SublayerViewController.swift */; };
+		64E87FE81EC350BA00568FCC /* Simulator Screen Shot 2017年5月10日 下午9.43.13.png in Resources */ = {isa = PBXBuildFile; fileRef = 64E87FE51EC350BA00568FCC /* Simulator Screen Shot 2017年5月10日 下午9.43.13.png */; };
+		64E87FE91EC350BA00568FCC /* Simulator Screen Shot 2017年5月10日 下午9.43.22.png in Resources */ = {isa = PBXBuildFile; fileRef = 64E87FE61EC350BA00568FCC /* Simulator Screen Shot 2017年5月10日 下午9.43.22.png */; };
+		64E87FEA1EC350BA00568FCC /* Simulator Screen Shot 2017年5月10日 下午9.43.09.png in Resources */ = {isa = PBXBuildFile; fileRef = 64E87FE71EC350BA00568FCC /* Simulator Screen Shot 2017年5月10日 下午9.43.09.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		647490C11EBC1204007F3A62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		647490C71EBC1DFD007F3A62 /* M34ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = M34ViewController.swift; sourceTree = "<group>"; };
 		647490C91EBC2469007F3A62 /* SublayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SublayerViewController.swift; sourceTree = "<group>"; };
+		64E87FE51EC350BA00568FCC /* Simulator Screen Shot 2017年5月10日 下午9.43.13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Simulator Screen Shot 2017年5月10日 下午9.43.13.png"; sourceTree = "<group>"; };
+		64E87FE61EC350BA00568FCC /* Simulator Screen Shot 2017年5月10日 下午9.43.22.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Simulator Screen Shot 2017年5月10日 下午9.43.22.png"; sourceTree = "<group>"; };
+		64E87FE71EC350BA00568FCC /* Simulator Screen Shot 2017年5月10日 下午9.43.09.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Simulator Screen Shot 2017年5月10日 下午9.43.09.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +68,9 @@
 				647490B71EBC1204007F3A62 /* ViewController.swift */,
 				647490C71EBC1DFD007F3A62 /* M34ViewController.swift */,
 				647490C91EBC2469007F3A62 /* SublayerViewController.swift */,
+				64E87FE51EC350BA00568FCC /* Simulator Screen Shot 2017年5月10日 下午9.43.13.png */,
+				64E87FE61EC350BA00568FCC /* Simulator Screen Shot 2017年5月10日 下午9.43.22.png */,
+				64E87FE71EC350BA00568FCC /* Simulator Screen Shot 2017年5月10日 下午9.43.09.png */,
 				647490B91EBC1204007F3A62 /* Main.storyboard */,
 				647490BC1EBC1204007F3A62 /* Assets.xcassets */,
 				647490BE1EBC1204007F3A62 /* LaunchScreen.storyboard */,
@@ -131,7 +140,10 @@
 			files = (
 				647490C01EBC1204007F3A62 /* LaunchScreen.storyboard in Resources */,
 				647490BD1EBC1204007F3A62 /* Assets.xcassets in Resources */,
+				64E87FE91EC350BA00568FCC /* Simulator Screen Shot 2017年5月10日 下午9.43.22.png in Resources */,
 				647490BB1EBC1204007F3A62 /* Main.storyboard in Resources */,
+				64E87FEA1EC350BA00568FCC /* Simulator Screen Shot 2017年5月10日 下午9.43.09.png in Resources */,
+				64E87FE81EC350BA00568FCC /* Simulator Screen Shot 2017年5月10日 下午9.43.13.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,6 +317,7 @@
 				647490C61EBC1204007F3A62 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
