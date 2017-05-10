@@ -12,6 +12,7 @@
 		6499CEFB1EBACD4E005C1389 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6499CEF91EBACD4E005C1389 /* Main.storyboard */; };
 		6499CEFD1EBACD4E005C1389 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6499CEFC1EBACD4E005C1389 /* Assets.xcassets */; };
 		6499CF001EBACD4E005C1389 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6499CEFE1EBACD4E005C1389 /* LaunchScreen.storyboard */; };
+		64E87FE41EC3501A00568FCC /* Simulator Screen Shot 2017年5月10日 下午9.40.42.png in Resources */ = {isa = PBXBuildFile; fileRef = 64E87FE31EC3501A00568FCC /* Simulator Screen Shot 2017年5月10日 下午9.40.42.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		6499CEFC1EBACD4E005C1389 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6499CEFF1EBACD4E005C1389 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6499CF011EBACD4E005C1389 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64E87FE31EC3501A00568FCC /* Simulator Screen Shot 2017年5月10日 下午9.40.42.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Simulator Screen Shot 2017年5月10日 下午9.40.42.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 				6499CEF71EBACD4E005C1389 /* ViewController.swift */,
 				6499CEF91EBACD4E005C1389 /* Main.storyboard */,
 				6499CEFC1EBACD4E005C1389 /* Assets.xcassets */,
+				64E87FE31EC3501A00568FCC /* Simulator Screen Shot 2017年5月10日 下午9.40.42.png */,
 				6499CEFE1EBACD4E005C1389 /* LaunchScreen.storyboard */,
 				6499CF011EBACD4E005C1389 /* Info.plist */,
 			);
@@ -125,6 +128,7 @@
 			files = (
 				6499CF001EBACD4E005C1389 /* LaunchScreen.storyboard in Resources */,
 				6499CEFD1EBACD4E005C1389 /* Assets.xcassets in Resources */,
+				64E87FE41EC3501A00568FCC /* Simulator Screen Shot 2017年5月10日 下午9.40.42.png in Resources */,
 				6499CEFB1EBACD4E005C1389 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
