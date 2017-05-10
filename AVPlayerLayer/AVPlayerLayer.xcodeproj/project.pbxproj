@@ -7,27 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6405ACF31EC2E70F0089FCCF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6405ACF21EC2E70F0089FCCF /* AppDelegate.swift */; };
-		6405ACF51EC2E70F0089FCCF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6405ACF41EC2E70F0089FCCF /* ViewController.swift */; };
-		6405ACF81EC2E70F0089FCCF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6405ACF61EC2E70F0089FCCF /* Main.storyboard */; };
-		6405ACFA1EC2E70F0089FCCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6405ACF91EC2E70F0089FCCF /* Assets.xcassets */; };
-		6405ACFD1EC2E70F0089FCCF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6405ACFB1EC2E70F0089FCCF /* LaunchScreen.storyboard */; };
-		6405AD051EC2F7650089FCCF /* Simulator Screen Shot 2017年5月10日 下午3.17.27.png in Resources */ = {isa = PBXBuildFile; fileRef = 6405AD041EC2F7650089FCCF /* Simulator Screen Shot 2017年5月10日 下午3.17.27.png */; };
+		6405AD131EC2FA110089FCCF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6405AD121EC2FA110089FCCF /* AppDelegate.swift */; };
+		6405AD151EC2FA110089FCCF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6405AD141EC2FA110089FCCF /* ViewController.swift */; };
+		6405AD181EC2FA110089FCCF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6405AD161EC2FA110089FCCF /* Main.storyboard */; };
+		6405AD1A1EC2FA110089FCCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6405AD191EC2FA110089FCCF /* Assets.xcassets */; };
+		6405AD1D1EC2FA110089FCCF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6405AD1B1EC2FA110089FCCF /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6405ACEF1EC2E70F0089FCCF /* CAEmitterLayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CAEmitterLayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		6405ACF21EC2E70F0089FCCF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6405ACF41EC2E70F0089FCCF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		6405ACF71EC2E70F0089FCCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		6405ACF91EC2E70F0089FCCF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		6405ACFC1EC2E70F0089FCCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		6405ACFE1EC2E70F0089FCCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6405AD041EC2F7650089FCCF /* Simulator Screen Shot 2017年5月10日 下午3.17.27.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Simulator Screen Shot 2017年5月10日 下午3.17.27.png"; sourceTree = "<group>"; };
+		6405AD0F1EC2FA110089FCCF /* AVPlayerLayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AVPlayerLayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6405AD121EC2FA110089FCCF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6405AD141EC2FA110089FCCF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6405AD171EC2FA110089FCCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6405AD191EC2FA110089FCCF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6405AD1C1EC2FA110089FCCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6405AD1E1EC2FA110089FCCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		6405ACEC1EC2E70F0089FCCF /* Frameworks */ = {
+		6405AD0C1EC2FA110089FCCF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -37,73 +35,72 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6405ACE61EC2E70F0089FCCF = {
+		6405AD061EC2FA110089FCCF = {
 			isa = PBXGroup;
 			children = (
-				6405ACF11EC2E70F0089FCCF /* CAEmitterLayer */,
-				6405ACF01EC2E70F0089FCCF /* Products */,
+				6405AD111EC2FA110089FCCF /* AVPlayerLayer */,
+				6405AD101EC2FA110089FCCF /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		6405ACF01EC2E70F0089FCCF /* Products */ = {
+		6405AD101EC2FA110089FCCF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6405ACEF1EC2E70F0089FCCF /* CAEmitterLayer.app */,
+				6405AD0F1EC2FA110089FCCF /* AVPlayerLayer.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6405ACF11EC2E70F0089FCCF /* CAEmitterLayer */ = {
+		6405AD111EC2FA110089FCCF /* AVPlayerLayer */ = {
 			isa = PBXGroup;
 			children = (
-				6405ACF21EC2E70F0089FCCF /* AppDelegate.swift */,
-				6405ACF41EC2E70F0089FCCF /* ViewController.swift */,
-				6405AD041EC2F7650089FCCF /* Simulator Screen Shot 2017年5月10日 下午3.17.27.png */,
-				6405ACF61EC2E70F0089FCCF /* Main.storyboard */,
-				6405ACF91EC2E70F0089FCCF /* Assets.xcassets */,
-				6405ACFB1EC2E70F0089FCCF /* LaunchScreen.storyboard */,
-				6405ACFE1EC2E70F0089FCCF /* Info.plist */,
+				6405AD121EC2FA110089FCCF /* AppDelegate.swift */,
+				6405AD141EC2FA110089FCCF /* ViewController.swift */,
+				6405AD161EC2FA110089FCCF /* Main.storyboard */,
+				6405AD191EC2FA110089FCCF /* Assets.xcassets */,
+				6405AD1B1EC2FA110089FCCF /* LaunchScreen.storyboard */,
+				6405AD1E1EC2FA110089FCCF /* Info.plist */,
 			);
-			path = CAEmitterLayer;
+			path = AVPlayerLayer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6405ACEE1EC2E70F0089FCCF /* CAEmitterLayer */ = {
+		6405AD0E1EC2FA110089FCCF /* AVPlayerLayer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6405AD011EC2E70F0089FCCF /* Build configuration list for PBXNativeTarget "CAEmitterLayer" */;
+			buildConfigurationList = 6405AD211EC2FA110089FCCF /* Build configuration list for PBXNativeTarget "AVPlayerLayer" */;
 			buildPhases = (
-				6405ACEB1EC2E70F0089FCCF /* Sources */,
-				6405ACEC1EC2E70F0089FCCF /* Frameworks */,
-				6405ACED1EC2E70F0089FCCF /* Resources */,
+				6405AD0B1EC2FA110089FCCF /* Sources */,
+				6405AD0C1EC2FA110089FCCF /* Frameworks */,
+				6405AD0D1EC2FA110089FCCF /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = CAEmitterLayer;
-			productName = CAEmitterLayer;
-			productReference = 6405ACEF1EC2E70F0089FCCF /* CAEmitterLayer.app */;
+			name = AVPlayerLayer;
+			productName = AVPlayerLayer;
+			productReference = 6405AD0F1EC2FA110089FCCF /* AVPlayerLayer.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		6405ACE71EC2E70F0089FCCF /* Project object */ = {
+		6405AD071EC2FA110089FCCF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = Mazy;
 				TargetAttributes = {
-					6405ACEE1EC2E70F0089FCCF = {
+					6405AD0E1EC2FA110089FCCF = {
 						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = 6405ACEA1EC2E70F0089FCCF /* Build configuration list for PBXProject "CAEmitterLayer" */;
+			buildConfigurationList = 6405AD0A1EC2FA110089FCCF /* Build configuration list for PBXProject "AVPlayerLayer" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -111,55 +108,54 @@
 				en,
 				Base,
 			);
-			mainGroup = 6405ACE61EC2E70F0089FCCF;
-			productRefGroup = 6405ACF01EC2E70F0089FCCF /* Products */;
+			mainGroup = 6405AD061EC2FA110089FCCF;
+			productRefGroup = 6405AD101EC2FA110089FCCF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6405ACEE1EC2E70F0089FCCF /* CAEmitterLayer */,
+				6405AD0E1EC2FA110089FCCF /* AVPlayerLayer */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		6405ACED1EC2E70F0089FCCF /* Resources */ = {
+		6405AD0D1EC2FA110089FCCF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6405ACFD1EC2E70F0089FCCF /* LaunchScreen.storyboard in Resources */,
-				6405ACFA1EC2E70F0089FCCF /* Assets.xcassets in Resources */,
-				6405ACF81EC2E70F0089FCCF /* Main.storyboard in Resources */,
-				6405AD051EC2F7650089FCCF /* Simulator Screen Shot 2017年5月10日 下午3.17.27.png in Resources */,
+				6405AD1D1EC2FA110089FCCF /* LaunchScreen.storyboard in Resources */,
+				6405AD1A1EC2FA110089FCCF /* Assets.xcassets in Resources */,
+				6405AD181EC2FA110089FCCF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		6405ACEB1EC2E70F0089FCCF /* Sources */ = {
+		6405AD0B1EC2FA110089FCCF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6405ACF51EC2E70F0089FCCF /* ViewController.swift in Sources */,
-				6405ACF31EC2E70F0089FCCF /* AppDelegate.swift in Sources */,
+				6405AD151EC2FA110089FCCF /* ViewController.swift in Sources */,
+				6405AD131EC2FA110089FCCF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		6405ACF61EC2E70F0089FCCF /* Main.storyboard */ = {
+		6405AD161EC2FA110089FCCF /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				6405ACF71EC2E70F0089FCCF /* Base */,
+				6405AD171EC2FA110089FCCF /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		6405ACFB1EC2E70F0089FCCF /* LaunchScreen.storyboard */ = {
+		6405AD1B1EC2FA110089FCCF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				6405ACFC1EC2E70F0089FCCF /* Base */,
+				6405AD1C1EC2FA110089FCCF /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -167,7 +163,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		6405ACFF1EC2E70F0089FCCF /* Debug */ = {
+		6405AD1F1EC2FA110089FCCF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -216,7 +212,7 @@
 			};
 			name = Debug;
 		};
-		6405AD001EC2E70F0089FCCF /* Release */ = {
+		6405AD201EC2FA110089FCCF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -258,25 +254,25 @@
 			};
 			name = Release;
 		};
-		6405AD021EC2E70F0089FCCF /* Debug */ = {
+		6405AD221EC2FA110089FCCF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = CAEmitterLayer/Info.plist;
+				INFOPLIST_FILE = AVPlayerLayer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Mazy.CAEmitterLayer;
+				PRODUCT_BUNDLE_IDENTIFIER = Mazy.AVPlayerLayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
-		6405AD031EC2E70F0089FCCF /* Release */ = {
+		6405AD231EC2FA110089FCCF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = CAEmitterLayer/Info.plist;
+				INFOPLIST_FILE = AVPlayerLayer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Mazy.CAEmitterLayer;
+				PRODUCT_BUNDLE_IDENTIFIER = Mazy.AVPlayerLayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -285,25 +281,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6405ACEA1EC2E70F0089FCCF /* Build configuration list for PBXProject "CAEmitterLayer" */ = {
+		6405AD0A1EC2FA110089FCCF /* Build configuration list for PBXProject "AVPlayerLayer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6405ACFF1EC2E70F0089FCCF /* Debug */,
-				6405AD001EC2E70F0089FCCF /* Release */,
+				6405AD1F1EC2FA110089FCCF /* Debug */,
+				6405AD201EC2FA110089FCCF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6405AD011EC2E70F0089FCCF /* Build configuration list for PBXNativeTarget "CAEmitterLayer" */ = {
+		6405AD211EC2FA110089FCCF /* Build configuration list for PBXNativeTarget "AVPlayerLayer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6405AD021EC2E70F0089FCCF /* Debug */,
-				6405AD031EC2E70F0089FCCF /* Release */,
+				6405AD221EC2FA110089FCCF /* Debug */,
+				6405AD231EC2FA110089FCCF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 6405ACE71EC2E70F0089FCCF /* Project object */;
+	rootObject = 6405AD071EC2FA110089FCCF /* Project object */;
 }
