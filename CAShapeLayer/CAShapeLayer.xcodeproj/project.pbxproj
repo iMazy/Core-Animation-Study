@@ -12,6 +12,7 @@
 		647490DD1EBC50B2007F3A62 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 647490DB1EBC50B2007F3A62 /* Main.storyboard */; };
 		647490DF1EBC50B2007F3A62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 647490DE1EBC50B2007F3A62 /* Assets.xcassets */; };
 		647490E21EBC50B2007F3A62 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 647490E01EBC50B2007F3A62 /* LaunchScreen.storyboard */; };
+		64E87FEC1EC3512F00568FCC /* Simulator Screen Shot 2017年5月10日 下午9.45.51.png in Resources */ = {isa = PBXBuildFile; fileRef = 64E87FEB1EC3512F00568FCC /* Simulator Screen Shot 2017年5月10日 下午9.45.51.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		647490DE1EBC50B2007F3A62 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		647490E11EBC50B2007F3A62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		647490E31EBC50B2007F3A62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64E87FEB1EC3512F00568FCC /* Simulator Screen Shot 2017年5月10日 下午9.45.51.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Simulator Screen Shot 2017年5月10日 下午9.45.51.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				647490D71EBC50B2007F3A62 /* AppDelegate.swift */,
 				647490D91EBC50B2007F3A62 /* ViewController.swift */,
 				647490DB1EBC50B2007F3A62 /* Main.storyboard */,
+				64E87FEB1EC3512F00568FCC /* Simulator Screen Shot 2017年5月10日 下午9.45.51.png */,
 				647490DE1EBC50B2007F3A62 /* Assets.xcassets */,
 				647490E01EBC50B2007F3A62 /* LaunchScreen.storyboard */,
 				647490E31EBC50B2007F3A62 /* Info.plist */,
@@ -126,6 +129,7 @@
 				647490E21EBC50B2007F3A62 /* LaunchScreen.storyboard in Resources */,
 				647490DF1EBC50B2007F3A62 /* Assets.xcassets in Resources */,
 				647490DD1EBC50B2007F3A62 /* Main.storyboard in Resources */,
+				64E87FEC1EC3512F00568FCC /* Simulator Screen Shot 2017年5月10日 下午9.45.51.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +301,7 @@
 				647490E81EBC50B2007F3A62 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
