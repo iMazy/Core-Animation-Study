@@ -5,7 +5,7 @@
 ### CGAffineTransform 练习
 >主要是图层在2D区间的旋转、缩放、平移以及三种混合使用
 
-[image](https://github.com/Mazy-ma/Core-Animation-Study/blob/master/CGAffineTransform/CGAffineTransform/Simulator%20Screen%20Shot%202017%E5%B9%B45%E6%9C%8810%E6%97%A5%20%E4%B8%8B%E5%8D%889.40.42.png)
+![image](https://github.com/Mazy-ma/Core-Animation-Study/blob/master/CGAffineTransform/CGAffineTransform/Simulator%20Screen%20Shot%202017%E5%B9%B45%E6%9C%8810%E6%97%A5%20%E4%B8%8B%E5%8D%889.40.42.png)
 
 ***
 ### CATransform3D 练习
