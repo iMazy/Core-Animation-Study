@@ -12,6 +12,7 @@
 		6405AD181EC2FA110089FCCF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6405AD161EC2FA110089FCCF /* Main.storyboard */; };
 		6405AD1A1EC2FA110089FCCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6405AD191EC2FA110089FCCF /* Assets.xcassets */; };
 		6405AD1D1EC2FA110089FCCF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6405AD1B1EC2FA110089FCCF /* LaunchScreen.storyboard */; };
+		6405AD251EC2FB6B0089FCCF /* demo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6405AD241EC2FB6B0089FCCF /* demo.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		6405AD191EC2FA110089FCCF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6405AD1C1EC2FA110089FCCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6405AD1E1EC2FA110089FCCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6405AD241EC2FB6B0089FCCF /* demo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = demo.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				6405AD121EC2FA110089FCCF /* AppDelegate.swift */,
 				6405AD141EC2FA110089FCCF /* ViewController.swift */,
 				6405AD161EC2FA110089FCCF /* Main.storyboard */,
+				6405AD241EC2FB6B0089FCCF /* demo.mp4 */,
 				6405AD191EC2FA110089FCCF /* Assets.xcassets */,
 				6405AD1B1EC2FA110089FCCF /* LaunchScreen.storyboard */,
 				6405AD1E1EC2FA110089FCCF /* Info.plist */,
@@ -123,6 +126,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6405AD251EC2FB6B0089FCCF /* demo.mp4 in Resources */,
 				6405AD1D1EC2FA110089FCCF /* LaunchScreen.storyboard in Resources */,
 				6405AD1A1EC2FA110089FCCF /* Assets.xcassets in Resources */,
 				6405AD181EC2FA110089FCCF /* Main.storyboard in Resources */,
