@@ -7,12 +7,14 @@
 //
 
 import UIKit
+// 导入AVPlayer 依赖 框架
 import AVFoundation
 
 class ViewController: UIViewController {
 
     @IBOutlet weak var containerView: UIView!
     
+    /// 定义AVPlayer
     var xmPlayer: AVPlayer?
     
     override func viewDidLoad() {
