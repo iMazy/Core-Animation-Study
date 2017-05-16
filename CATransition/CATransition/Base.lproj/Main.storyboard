@@ -1,14 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CATransition" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +21,67 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8DI-Pi-bl6">
+                                <rect key="frame" x="50" y="100" width="275" height="275"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="8DI-Pi-bl6" secondAttribute="height" id="mN5-a1-pvE"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lyN-Dn-pDm">
+                                <rect key="frame" x="127" y="537" width="120" height="30"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="fIB-M0-ys9"/>
+                                </constraints>
+                                <state key="normal" title="Switch Image"/>
+                                <connections>
+                                    <action selector="switchImage" destination="BYZ-38-t0r" eventType="touchUpInside" id="I5E-0c-5tZ"/>
+                                </connections>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="bDf-ek-Sb0">
+                                <rect key="frame" x="50" y="459" width="275" height="29"/>
+                                <segments>
+                                    <segment title="Left"/>
+                                    <segment title="Right"/>
+                                    <segment title="Top"/>
+                                    <segment title="Bottom"/>
+                                </segments>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="L0P-WI-Nqk">
+                                <rect key="frame" x="50" y="403" width="275" height="29"/>
+                                <segments>
+                                    <segment title="Fade"/>
+                                    <segment title="MoveIn"/>
+                                    <segment title="Push"/>
+                                    <segment title="Reveal"/>
+                                </segments>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="lyN-Dn-pDm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Cks-gp-RnQ"/>
+                            <constraint firstItem="bDf-ek-Sb0" firstAttribute="trailing" secondItem="L0P-WI-Nqk" secondAttribute="trailing" id="E9z-gS-hCK"/>
+                            <constraint firstItem="bDf-ek-Sb0" firstAttribute="leading" secondItem="L0P-WI-Nqk" secondAttribute="leading" id="FhF-hB-KeD"/>
+                            <constraint firstItem="L0P-WI-Nqk" firstAttribute="trailing" secondItem="8DI-Pi-bl6" secondAttribute="trailing" id="Gse-xp-Le3"/>
+                            <constraint firstItem="L0P-WI-Nqk" firstAttribute="leading" secondItem="8DI-Pi-bl6" secondAttribute="leading" id="PpZ-dm-MGj"/>
+                            <constraint firstItem="L0P-WI-Nqk" firstAttribute="top" secondItem="8DI-Pi-bl6" secondAttribute="bottom" constant="28" id="Zor-Tg-4e2"/>
+                            <constraint firstItem="8DI-Pi-bl6" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="80" id="koo-eb-5u7"/>
+                            <constraint firstItem="lyN-Dn-pDm" firstAttribute="top" secondItem="bDf-ek-Sb0" secondAttribute="bottom" constant="50" id="nQX-u4-PIU"/>
+                            <constraint firstItem="bDf-ek-Sb0" firstAttribute="top" secondItem="L0P-WI-Nqk" secondAttribute="bottom" constant="28" id="poU-yc-dhv"/>
+                            <constraint firstAttribute="trailing" secondItem="8DI-Pi-bl6" secondAttribute="trailing" constant="50" id="srQ-mS-AlI"/>
+                            <constraint firstItem="8DI-Pi-bl6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="50" id="uM8-gP-hN6"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="8DI-Pi-bl6" id="J87-rf-vcE"/>
+                        <outlet property="styleControl" destination="L0P-WI-Nqk" id="fto-xv-dXb"/>
+                        <outlet property="subStyleControl" destination="bDf-ek-Sb0" id="7lM-Kl-RNp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
         </scene>
     </scenes>
 </document>
