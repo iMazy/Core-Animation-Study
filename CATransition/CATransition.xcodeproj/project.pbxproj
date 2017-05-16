@@ -12,6 +12,7 @@
 		211C702A1ECAC59300E06B17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 211C70281ECAC59300E06B17 /* Main.storyboard */; };
 		211C702C1ECAC59300E06B17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 211C702B1ECAC59300E06B17 /* Assets.xcassets */; };
 		211C702F1ECAC59300E06B17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 211C702D1ECAC59300E06B17 /* LaunchScreen.storyboard */; };
+		211C70371ECADA2900E06B17 /* CATransition.gif in Resources */ = {isa = PBXBuildFile; fileRef = 211C70361ECADA2900E06B17 /* CATransition.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		211C702B1ECAC59300E06B17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		211C702E1ECAC59300E06B17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		211C70301ECAC59300E06B17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		211C70361ECADA2900E06B17 /* CATransition.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = CATransition.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 				211C70261ECAC59300E06B17 /* ViewController.swift */,
 				211C70281ECAC59300E06B17 /* Main.storyboard */,
 				211C702B1ECAC59300E06B17 /* Assets.xcassets */,
+				211C70361ECADA2900E06B17 /* CATransition.gif */,
 				211C702D1ECAC59300E06B17 /* LaunchScreen.storyboard */,
 				211C70301ECAC59300E06B17 /* Info.plist */,
 			);
@@ -126,6 +129,7 @@
 				211C702F1ECAC59300E06B17 /* LaunchScreen.storyboard in Resources */,
 				211C702C1ECAC59300E06B17 /* Assets.xcassets in Resources */,
 				211C702A1ECAC59300E06B17 /* Main.storyboard in Resources */,
+				211C70371ECADA2900E06B17 /* CATransition.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +303,7 @@
 				211C70351ECAC59300E06B17 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
