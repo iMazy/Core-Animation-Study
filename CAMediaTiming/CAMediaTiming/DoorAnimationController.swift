@@ -10,26 +10,25 @@ import UIKit
 
 class DoorAnimationController: UIViewController {
 
+    @IBOutlet weak var doorImageView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        doorImageView.layer.anchorPoint = CGPoint(x: 1, y: 0.5)
+        
+        var perspective = CATransform3DIdentity
+        perspective.m34 = -1/500.0
+        doorImageView.layer.sublayerTransform = perspective
+        
+        let animation = CABasicAnimation()
+        animation.keyPath = "transform.rotation.y"
+        animation.toValue = -M_PI_2
+        animation.duration = 2
+        // 动画重复一个指定的时间，而不是指定次数
+        animation.repeatDuration = 14.0
+        // 返回
+        animation.autoreverses = true
+        doorImageView.layer.add(animation, forKey: nil)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

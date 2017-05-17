@@ -9,27 +9,63 @@
 import UIKit
 
 class Duration_repeatController: UIViewController {
+    
+    @IBOutlet weak var planeImageView: UIImageView!
+    @IBOutlet weak var durationField: UITextField!
+    
+    @IBOutlet weak var repeatCountField: UITextField!
+    @IBOutlet weak var startButton: UIButton!
+    
+    var planeLayer = CALayer()
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        
+        
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    func setControlEnabeled(enabled: Bool) {
+        for control: UIControl in [durationField,repeatCountField,startButton] {
+            control.isEnabled = enabled
+            control.alpha = enabled ? 1.0 : 0.25
+        }
+    }
+    
+    func hideKeyboard() {
+        durationField.resignFirstResponder()
+        repeatCountField.resignFirstResponder()
+    }
+    
+    @IBAction func startAnimation(_ sender: UIButton) {
+    
+        guard let durationStr = durationField.text,
+            let repeatCountStr = repeatCountField.text,
+            let duration = Double(durationStr),
+            let repeatCount = Float(repeatCountStr) else {
+                return
+        }
+        
+        let animation = CABasicAnimation()
+        animation.keyPath = "transform.rotation"
+        animation.duration = duration
+        animation.repeatCount = repeatCount
+        animation.byValue = M_PI * 2
+        animation.delegate = self
+        planeImageView.layer.add(animation, forKey: "rotateAnimation")
+        setControlEnabeled(enabled: false)
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        hideKeyboard()
     }
     
 
-    /*
-    // MARK: - Navigation
+}
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+extension Duration_repeatController: CAAnimationDelegate {
+    func animationDidStop(_ anim: CAAnimation, finished flag: Bool) {
+        setControlEnabeled(enabled: true)
     }
-    */
-
 }
