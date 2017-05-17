@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		21B840931ECBE41900509C8B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B840921ECBE41900509C8B /* AppDelegate.swift */; };
-		21B840951ECBE41900509C8B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B840941ECBE41900509C8B /* ViewController.swift */; };
 		21B840981ECBE41900509C8B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21B840961ECBE41900509C8B /* Main.storyboard */; };
 		21B8409A1ECBE41900509C8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21B840991ECBE41900509C8B /* Assets.xcassets */; };
 		21B8409D1ECBE41900509C8B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21B8409B1ECBE41900509C8B /* LaunchScreen.storyboard */; };
@@ -16,12 +15,15 @@
 		21B840A71ECBE65400509C8B /* DoorAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B840A61ECBE65400509C8B /* DoorAnimationController.swift */; };
 		21B840A91ECBE67900509C8B /* TimeOffsetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B840A81ECBE67900509C8B /* TimeOffsetViewController.swift */; };
 		21B840AD1ECBFCFA00509C8B /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B840AC1ECBFCFA00509C8B /* MainTableViewController.swift */; };
+		21B840B21ECC019700509C8B /* CAMediaTiming1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 21B840AE1ECC019700509C8B /* CAMediaTiming1.gif */; };
+		21B840B31ECC019700509C8B /* CAMediaTiming2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 21B840AF1ECC019700509C8B /* CAMediaTiming2.gif */; };
+		21B840B41ECC019700509C8B /* CAMediaTiming3.gif in Resources */ = {isa = PBXBuildFile; fileRef = 21B840B01ECC019700509C8B /* CAMediaTiming3.gif */; };
+		21B840B51ECC019700509C8B /* CAMediaTiming4.gif in Resources */ = {isa = PBXBuildFile; fileRef = 21B840B11ECC019700509C8B /* CAMediaTiming4.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		21B8408F1ECBE41900509C8B /* CAMediaTiming.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CAMediaTiming.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21B840921ECBE41900509C8B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		21B840941ECBE41900509C8B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		21B840971ECBE41900509C8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		21B840991ECBE41900509C8B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		21B8409C1ECBE41900509C8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -30,6 +32,10 @@
 		21B840A61ECBE65400509C8B /* DoorAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoorAnimationController.swift; sourceTree = "<group>"; };
 		21B840A81ECBE67900509C8B /* TimeOffsetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeOffsetViewController.swift; sourceTree = "<group>"; };
 		21B840AC1ECBFCFA00509C8B /* MainTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
+		21B840AE1ECC019700509C8B /* CAMediaTiming1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = CAMediaTiming1.gif; sourceTree = "<group>"; };
+		21B840AF1ECC019700509C8B /* CAMediaTiming2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = CAMediaTiming2.gif; sourceTree = "<group>"; };
+		21B840B01ECC019700509C8B /* CAMediaTiming3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = CAMediaTiming3.gif; sourceTree = "<group>"; };
+		21B840B11ECC019700509C8B /* CAMediaTiming4.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = CAMediaTiming4.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,13 +69,16 @@
 			isa = PBXGroup;
 			children = (
 				21B840921ECBE41900509C8B /* AppDelegate.swift */,
-				21B840941ECBE41900509C8B /* ViewController.swift */,
 				21B840AC1ECBFCFA00509C8B /* MainTableViewController.swift */,
 				21B840A41ECBE63B00509C8B /* Duration_repeatController.swift */,
 				21B840A61ECBE65400509C8B /* DoorAnimationController.swift */,
 				21B840A81ECBE67900509C8B /* TimeOffsetViewController.swift */,
 				21B840961ECBE41900509C8B /* Main.storyboard */,
 				21B840991ECBE41900509C8B /* Assets.xcassets */,
+				21B840AE1ECC019700509C8B /* CAMediaTiming1.gif */,
+				21B840AF1ECC019700509C8B /* CAMediaTiming2.gif */,
+				21B840B01ECC019700509C8B /* CAMediaTiming3.gif */,
+				21B840B11ECC019700509C8B /* CAMediaTiming4.gif */,
 				21B8409B1ECBE41900509C8B /* LaunchScreen.storyboard */,
 				21B8409E1ECBE41900509C8B /* Info.plist */,
 			);
@@ -136,8 +145,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				21B8409D1ECBE41900509C8B /* LaunchScreen.storyboard in Resources */,
+				21B840B51ECC019700509C8B /* CAMediaTiming4.gif in Resources */,
 				21B8409A1ECBE41900509C8B /* Assets.xcassets in Resources */,
 				21B840981ECBE41900509C8B /* Main.storyboard in Resources */,
+				21B840B21ECC019700509C8B /* CAMediaTiming1.gif in Resources */,
+				21B840B31ECC019700509C8B /* CAMediaTiming2.gif in Resources */,
+				21B840B41ECC019700509C8B /* CAMediaTiming3.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,7 +163,6 @@
 			files = (
 				21B840A91ECBE67900509C8B /* TimeOffsetViewController.swift in Sources */,
 				21B840A71ECBE65400509C8B /* DoorAnimationController.swift in Sources */,
-				21B840951ECBE41900509C8B /* ViewController.swift in Sources */,
 				21B840A51ECBE63B00509C8B /* Duration_repeatController.swift in Sources */,
 				21B840AD1ECBFCFA00509C8B /* MainTableViewController.swift in Sources */,
 				21B840931ECBE41900509C8B /* AppDelegate.swift in Sources */,
