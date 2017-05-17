@@ -12,6 +12,10 @@
 		21B840981ECBE41900509C8B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21B840961ECBE41900509C8B /* Main.storyboard */; };
 		21B8409A1ECBE41900509C8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21B840991ECBE41900509C8B /* Assets.xcassets */; };
 		21B8409D1ECBE41900509C8B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21B8409B1ECBE41900509C8B /* LaunchScreen.storyboard */; };
+		21B840A51ECBE63B00509C8B /* Duration_repeatController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B840A41ECBE63B00509C8B /* Duration_repeatController.swift */; };
+		21B840A71ECBE65400509C8B /* DoorAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B840A61ECBE65400509C8B /* DoorAnimationController.swift */; };
+		21B840A91ECBE67900509C8B /* TimeOffsetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B840A81ECBE67900509C8B /* TimeOffsetViewController.swift */; };
+		21B840AB1ECBE68600509C8B /* FillModeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B840AA1ECBE68600509C8B /* FillModeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		21B840991ECBE41900509C8B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		21B8409C1ECBE41900509C8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		21B8409E1ECBE41900509C8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21B840A41ECBE63B00509C8B /* Duration_repeatController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Duration_repeatController.swift; sourceTree = "<group>"; };
+		21B840A61ECBE65400509C8B /* DoorAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoorAnimationController.swift; sourceTree = "<group>"; };
+		21B840A81ECBE67900509C8B /* TimeOffsetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeOffsetViewController.swift; sourceTree = "<group>"; };
+		21B840AA1ECBE68600509C8B /* FillModeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FillModeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,10 @@
 			children = (
 				21B840921ECBE41900509C8B /* AppDelegate.swift */,
 				21B840941ECBE41900509C8B /* ViewController.swift */,
+				21B840A41ECBE63B00509C8B /* Duration_repeatController.swift */,
+				21B840A61ECBE65400509C8B /* DoorAnimationController.swift */,
+				21B840A81ECBE67900509C8B /* TimeOffsetViewController.swift */,
+				21B840AA1ECBE68600509C8B /* FillModeViewController.swift */,
 				21B840961ECBE41900509C8B /* Main.storyboard */,
 				21B840991ECBE41900509C8B /* Assets.xcassets */,
 				21B8409B1ECBE41900509C8B /* LaunchScreen.storyboard */,
@@ -136,7 +148,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21B840A91ECBE67900509C8B /* TimeOffsetViewController.swift in Sources */,
+				21B840A71ECBE65400509C8B /* DoorAnimationController.swift in Sources */,
 				21B840951ECBE41900509C8B /* ViewController.swift in Sources */,
+				21B840A51ECBE63B00509C8B /* Duration_repeatController.swift in Sources */,
+				21B840AB1ECBE68600509C8B /* FillModeViewController.swift in Sources */,
 				21B840931ECBE41900509C8B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
