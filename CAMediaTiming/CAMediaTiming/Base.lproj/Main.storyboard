@@ -31,7 +31,7 @@
         <!--CAMediaTiming-->
         <scene sceneID="qLJ-l1-BAZ">
             <objects>
-                <tableViewController id="KFu-qY-aLq" sceneMemberID="viewController">
+                <tableViewController id="KFu-qY-aLq" customClass="MainTableViewController" customModule="CAMediaTiming" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Bkc-bd-fOe">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -106,7 +106,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="fillMode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="psU-uW-Rla">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="FillMode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="psU-uW-Rla">
                                                     <rect key="frame" x="15" y="0.0" width="325" height="43"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -116,7 +116,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="SWc-E7-sMP" kind="show" id="rHu-Q9-dru"/>
+                                            <segue destination="N5H-E3-0MR" kind="show" identifier="fillMode" id="f10-Dn-7MN"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -345,30 +345,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LLz-ly-tDB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1852" y="769.56521739130437"/>
-        </scene>
-        <!--FillMode-->
-        <scene sceneID="TtT-Gd-Y88">
-            <objects>
-                <viewController id="SWc-E7-sMP" customClass="FillModeViewController" customModule="CAMediaTiming" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="kLz-2g-IlZ"/>
-                        <viewControllerLayoutGuide type="bottom" id="Hs3-YJ-eGy"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="UpQ-JK-Mtw">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="FillMode" id="wKU-8N-3XS"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="kCp-EW-0vp" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2546" y="773"/>
+            <point key="canvasLocation" x="2282" y="774"/>
         </scene>
     </scenes>
     <resources>
         <image name="airplane" width="256" height="256"/>
         <image name="door" width="187" height="325"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="f10-Dn-7MN"/>
+    </inferredMetricsTieBreakers>
 </document>

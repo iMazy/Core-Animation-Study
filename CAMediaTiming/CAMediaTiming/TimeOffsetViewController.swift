@@ -21,6 +21,8 @@ class TimeOffsetViewController: UIViewController {
     
     @IBOutlet weak var speedLabel: UILabel!
     
+    var isFillMode: Bool = false
+    
     var bezierPath = UIBezierPath()
     var plainLayer = CALayer()
     
@@ -73,6 +75,18 @@ class TimeOffsetViewController: UIViewController {
         animation.rotationMode = kCAAnimationRotateAuto
         animation.isRemovedOnCompletion = false
         
+        if isFillMode {
+            /*
+             kCAFillModeForwards
+             kCAFillModeBackwards
+             kCAFillModeBoth
+             kCAFillModeRemoved // default
+             */
+            animation.fillMode = kCAFillModeForwards
+        }
+        
         plainLayer.add(animation, forKey: nil)
     }
+    
+    
 }
