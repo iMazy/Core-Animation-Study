@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2155056A1F3C205500E9B0F1 /* baseAnimation.gif in Resources */ = {isa = PBXBuildFile; fileRef = 215505691F3C205500E9B0F1 /* baseAnimation.gif */; };
 		642F55201EC406FE0069AD7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642F551F1EC406FE0069AD7A /* AppDelegate.swift */; };
 		642F55221EC406FE0069AD7A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642F55211EC406FE0069AD7A /* ViewController.swift */; };
 		642F55251EC406FE0069AD7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 642F55231EC406FE0069AD7A /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		215505691F3C205500E9B0F1 /* baseAnimation.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = baseAnimation.gif; sourceTree = "<group>"; };
 		642F551C1EC406FD0069AD7A /* CABasicAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CABasicAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		642F551F1EC406FE0069AD7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		642F55211EC406FE0069AD7A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 				642F551F1EC406FE0069AD7A /* AppDelegate.swift */,
 				642F55211EC406FE0069AD7A /* ViewController.swift */,
 				642F55231EC406FE0069AD7A /* Main.storyboard */,
+				215505691F3C205500E9B0F1 /* baseAnimation.gif */,
 				642F55261EC406FE0069AD7A /* Assets.xcassets */,
 				642F55281EC406FE0069AD7A /* LaunchScreen.storyboard */,
 				642F552B1EC406FE0069AD7A /* Info.plist */,
@@ -123,6 +126,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2155056A1F3C205500E9B0F1 /* baseAnimation.gif in Resources */,
 				642F552A1EC406FE0069AD7A /* LaunchScreen.storyboard in Resources */,
 				642F55271EC406FE0069AD7A /* Assets.xcassets in Resources */,
 				642F55251EC406FE0069AD7A /* Main.storyboard in Resources */,
@@ -297,6 +301,7 @@
 				642F55301EC406FE0069AD7A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
