@@ -35,7 +35,7 @@ class ViewController: UIViewController {
         
         var transform = CATransform3DIdentity
         transform.m34 = -1.0/800
-        transform = CATransform3DRotate(transform, CGFloat(M_PI_4), 1, 1, 0)
+        transform = CATransform3DRotate(transform, CGFloat(Double.pi/4), 1, 1, 0)
         playerLayer.transform = transform
         
         playerLayer.masksToBounds = true

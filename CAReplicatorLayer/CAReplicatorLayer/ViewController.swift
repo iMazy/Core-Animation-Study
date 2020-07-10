@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var containerView: UIView!
     
     @IBOutlet weak var indicitorView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
        
