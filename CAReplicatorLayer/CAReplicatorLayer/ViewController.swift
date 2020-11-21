@@ -29,7 +29,7 @@ class ViewController: UIViewController {
         
         var transform = CATransform3DIdentity
         transform = CATransform3DTranslate(transform, 0, width*2, 0)
-        transform = CATransform3DRotate(transform, CGFloat(M_PI/5), 0, 0, 1)
+        transform = CATransform3DRotate(transform, CGFloat(Double.pi/5), 0, 0, 1)
         transform = CATransform3DTranslate(transform, 0, -2*width, 0)
         replicator.instanceTransform = transform
         
@@ -58,7 +58,7 @@ class ViewController: UIViewController {
         
         var transform = CATransform3DIdentity
         transform = CATransform3DTranslate(transform, 0, width*3, 0)
-        transform = CATransform3DRotate(transform, CGFloat(M_PI/30), 0, 0, 1)
+        transform = CATransform3DRotate(transform, CGFloat(Double.pi/30), 0, 0, 1)
         transform = CATransform3DTranslate(transform, 0, -3*width, 0)
         replicator.instanceTransform = transform
         

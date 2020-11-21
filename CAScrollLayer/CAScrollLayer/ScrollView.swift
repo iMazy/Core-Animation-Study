@@ -40,7 +40,7 @@ class ScrollView: UIView {
         addGestureRecognizer(panGesture)
     }
     
-    func panAction(recognizer: UIPanGestureRecognizer)  {
+    @objc func panAction(recognizer: UIPanGestureRecognizer)  {
         
         var offset: CGPoint = bounds.origin
         

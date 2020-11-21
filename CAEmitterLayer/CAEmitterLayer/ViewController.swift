@@ -42,7 +42,7 @@ class ViewController: UIViewController {
         containerView.layer.addSublayer(emitterLayer)
         
         // config emitter
-        emitterLayer.renderMode = kCAEmitterLayerAdditive //
+        emitterLayer.renderMode = CAEmitterLayerRenderMode.additive //
         //
         emitterLayer.emitterPosition = CGPoint(x: emitterLayer.bounds.width/2, y: emitterLayer.bounds.height/2)
         
@@ -53,11 +53,11 @@ class ViewController: UIViewController {
         // config cell
         cell.birthRate = 30 // 产生的数量
         cell.lifetime = 5.0 // 存活时间
-        cell.color = UIColor(colorLiteralRed: 1.0, green: 0.5, blue: 0.1, alpha: 1.0).cgColor // cell 的颜色
+        cell.color = UIColor(red: 1.0, green: 0.5, blue: 0.1, alpha: 1.0).cgColor // cell 的颜色
         cell.alphaSpeed = -0.4 // 透明度降低率
         cell.velocity = 50
         cell.velocityRange = 50
-        cell.emissionRange = CGFloat(M_PI * 2) // 出现范围
+        cell.emissionRange = CGFloat(Double.pi * 2) // 出现范围
         
         emitterLayer.emitterCells = [cell] // 添加到leyer中
     }
@@ -69,10 +69,8 @@ class ViewController: UIViewController {
 //        emitterLayer.frame = rect
         view.layer.addSublayer(emitterLayer)
         
-        //        emitterLayer.emitterSize = CGSize(width: 20, height: 20)
         // config emitter
-        emitterLayer.renderMode = kCAEmitterLayerAdditive //
-        
+        emitterLayer.renderMode = .additive
         // create cell
         let cell = CAEmitterCell()
         // 如果是图片 必须是CIImage
@@ -80,12 +78,12 @@ class ViewController: UIViewController {
         // config cell
         cell.birthRate = 30 // 产生的数量
         cell.lifetime = 5.0 // 存活时间
-        cell.color = UIColor(colorLiteralRed: 1.0, green: 0.5, blue: 0.1, alpha: 1.0).cgColor // cell 的颜色
+        cell.color = UIColor(red: 1.0, green: 0.5, blue: 0.1, alpha: 1.0).cgColor // cell 的颜色
         cell.alphaSpeed = -0.4 // 透明度降低率
         cell.velocity = 50
         cell.velocityRange = 50
         
-        cell.emissionRange = CGFloat(M_PI_4) // 出现范围
+        cell.emissionRange = CGFloat(Float.pi / 4) // 出现范围
         
         switch direction {
         case .TopLeft:

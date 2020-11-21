@@ -32,23 +32,23 @@ class ViewController: UIViewController {
         let path = UIBezierPath()
         let width = viewA.bounds.width
         
-        path.addArc(withCenter: viewA.center, radius: viewA.bounds.width/2-10, startAngle: 0, endAngle: CGFloat(M_PI*2), clockwise: true)
+        path.addArc(withCenter: viewA.center, radius: viewA.bounds.width/2-10, startAngle: 0, endAngle: CGFloat(Double.pi * 2), clockwise: true)
         
         path.move(to: CGPoint(x: 25, y: 35))
-        path.addArc(withCenter: CGPoint(x:33,y:38), radius: 8, startAngle: CGFloat(-M_PI), endAngle: CGFloat(M_PI), clockwise: true)
+        path.addArc(withCenter: CGPoint(x:33,y:38), radius: 8, startAngle: CGFloat(-Double.pi), endAngle: CGFloat(M_PI), clockwise: true)
         
         path.move(to: CGPoint(x: width-25, y: 35))
-        path.addArc(withCenter: CGPoint(x:width-33,y:38), radius: 8, startAngle: 0, endAngle: CGFloat(M_PI*2), clockwise: true)
+        path.addArc(withCenter: CGPoint(x:width-33,y:38), radius: 8, startAngle: 0, endAngle: CGFloat(Double.pi*2), clockwise: true)
         
         path.move(to: CGPoint(x: 28, y: width-28))
-        path.addArc(withCenter: viewA.center, radius: viewA.bounds.width/2-10-10, startAngle: CGFloat(-M_PI_4*5), endAngle: CGFloat(M_PI_4), clockwise: false)
+        path.addArc(withCenter: viewA.center, radius: viewA.bounds.width/2-10-10, startAngle: CGFloat(-Double.pi/4*5), endAngle: CGFloat(Double.pi/4), clockwise: false)
         
         let shapeLayer = CAShapeLayer()
         shapeLayer.strokeColor = UIColor.red.cgColor
         shapeLayer.fillColor = UIColor.clear.cgColor
         shapeLayer.lineWidth = 3
-        shapeLayer.lineJoin = kCALineJoinRound
-        shapeLayer.lineCap = kCALineCapRound
+        shapeLayer.lineJoin = CAShapeLayerLineJoin.round
+        shapeLayer.lineCap = CAShapeLayerLineCap.round
         shapeLayer.path = path.cgPath
 
         viewA.layer.addSublayer(shapeLayer)
@@ -69,8 +69,8 @@ class ViewController: UIViewController {
         shapeLayer.strokeColor = UIColor.red.cgColor
         shapeLayer.fillColor = UIColor.clear.cgColor
         shapeLayer.lineWidth = 5
-        shapeLayer.lineJoin = kCALineJoinRound
-        shapeLayer.lineCap = kCALineCapRound
+        shapeLayer.lineJoin = CAShapeLayerLineJoin.round
+        shapeLayer.lineCap = CAShapeLayerLineCap.round
         shapeLayer.path = path.cgPath
         
         viewB.layer.addSublayer(shapeLayer)
@@ -90,8 +90,8 @@ class ViewController: UIViewController {
         shapeLayer.strokeColor = UIColor.red.cgColor
         shapeLayer.fillColor = UIColor.clear.cgColor
         shapeLayer.lineWidth = 5
-        shapeLayer.lineJoin = kCALineJoinRound
-        shapeLayer.lineCap = kCALineCapRound
+        shapeLayer.lineJoin = CAShapeLayerLineJoin.round
+        shapeLayer.lineCap = CAShapeLayerLineCap.round
         shapeLayer.path = path.cgPath
         
         viewC.layer.addSublayer(shapeLayer)
@@ -109,8 +109,8 @@ class ViewController: UIViewController {
         shapeLayer.strokeColor = UIColor.red.cgColor
         shapeLayer.fillColor = UIColor.clear.cgColor
         shapeLayer.lineWidth = 5
-        shapeLayer.lineJoin = kCALineJoinRound
-        shapeLayer.lineCap = kCALineCapRound
+        shapeLayer.lineJoin = CAShapeLayerLineJoin.round
+        shapeLayer.lineCap = CAShapeLayerLineCap.round
         shapeLayer.path = path.cgPath
         
         viewD.layer.addSublayer(shapeLayer)

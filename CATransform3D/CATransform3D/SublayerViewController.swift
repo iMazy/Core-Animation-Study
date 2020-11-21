@@ -22,19 +22,17 @@ class SublayerViewController: UIViewController {
         perspective.m34 = -1.0/200
         containerView.layer.sublayerTransform = perspective
         
-        imageViewA.layer.transform = CATransform3DMakeRotation(CGFloat(M_PI_4), 0, 1, 0)
-        imageViewB.layer.transform = CATransform3DMakeRotation(CGFloat(-M_PI_4), 0, 1, 0)
-        imageViewC.layer.transform = CATransform3DMakeRotation(CGFloat(M_PI_4), 0, 1, 0)
-        imageViewD.layer.transform = CATransform3DMakeRotation(CGFloat(-M_PI_4), 0, 1, 0)
+        imageViewA.layer.transform = CATransform3DMakeRotation(CGFloat(Double.pi/4), 0, 1, 0)
+        imageViewB.layer.transform = CATransform3DMakeRotation(CGFloat(-Double.pi/4), 0, 1, 0)
+        imageViewC.layer.transform = CATransform3DMakeRotation(CGFloat(Double.pi/4), 0, 1, 0)
+        imageViewD.layer.transform = CATransform3DMakeRotation(CGFloat(-Double.pi/4), 0, 1, 0)
         
     }
-    
-    
     
     @IBOutlet weak var imageViewE: UIImageView!
     
     @IBAction func beginMirrorAction() {
-        let transform3D = CATransform3DMakeRotation(CGFloat(M_PI), 0, 1, 0)
+        let transform3D = CATransform3DMakeRotation(CGFloat(Double.pi), 0, 1, 0)
         imageViewE.layer.transform = transform3D
     }
 

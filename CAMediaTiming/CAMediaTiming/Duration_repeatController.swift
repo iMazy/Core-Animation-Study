@@ -51,7 +51,7 @@ class Duration_repeatController: UIViewController {
         animation.keyPath = "transform.rotation"
         animation.duration = duration
         animation.repeatCount = repeatCount
-        animation.byValue = M_PI * 2
+        animation.byValue = Double.pi * 2
         animation.delegate = self
         planeImageView.layer.add(animation, forKey: "rotateAnimation")
         setControlEnabeled(enabled: false)

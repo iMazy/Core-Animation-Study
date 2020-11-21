@@ -33,9 +33,9 @@ class ViewController: UIViewController {
         
         // 设置textLayer的属性
         textLayer.foregroundColor = UIColor.black.cgColor
-        textLayer.alignmentMode = kCAAlignmentJustified
+        textLayer.alignmentMode = CATextLayerAlignmentMode.justified
         // 设置文字适配bounds大小，string类型：start/middle/end/none
-        textLayer.truncationMode = kCATruncationStart
+        textLayer.truncationMode = CATextLayerTruncationMode.start
         textLayer.isWrapped = true
         
         // 设置字体

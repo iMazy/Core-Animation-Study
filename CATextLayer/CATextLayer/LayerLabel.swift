@@ -22,7 +22,7 @@ class LayerLabel: UILabel {
     
     func setup() {
         
-        textLayer.alignmentMode = kCAAlignmentJustified
+        textLayer.alignmentMode = CATextLayerAlignmentMode.justified
         
         textLayer.isWrapped = true
         layer.display()

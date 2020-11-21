@@ -62,32 +62,32 @@ class ViewController: UIViewController {
         
     }
     
-    func styleChange(segment: UISegmentedControl) {
+    @objc func styleChange(segment: UISegmentedControl) {
         
         switch segment.selectedSegmentIndex {
         case 0:
-            transition.type = kCATransitionFade
+            transition.type = CATransitionType.fade
         case 1:
-            transition.type = kCATransitionMoveIn
+            transition.type = CATransitionType.moveIn
         case 2:
-            transition.type = kCATransitionPush
+            transition.type = CATransitionType.push
         case 3:
-            transition.type = kCATransitionReveal
+            transition.type = CATransitionType.reveal
         default:
             break
         }
     }
     
-    func subStyleChange(segment: UISegmentedControl) {
+    @objc func subStyleChange(segment: UISegmentedControl) {
         switch segment.selectedSegmentIndex {
         case 0:
-            transition.subtype = kCATransitionFromLeft
+            transition.subtype = CATransitionSubtype.fromLeft
         case 1:
-            transition.subtype = kCATransitionFromRight
+            transition.subtype = CATransitionSubtype.fromRight
         case 2:
-            transition.subtype = kCATransitionFromTop
+            transition.subtype = CATransitionSubtype.fromTop
         case 3:
-            transition.subtype = kCATransitionFromBottom
+            transition.subtype = CATransitionSubtype.fromBottom
         default:
             break
         }
@@ -100,7 +100,7 @@ class ViewController: UIViewController {
         imageView.layer.add(transition, forKey: nil)
         
         guard let currentImage = imageView.image,
-        var index = imageArray?.index(of: currentImage)
+              var index = imageArray?.firstIndex(of: currentImage)
         else { return }
         
         index = (index + 1) % (imageArray?.count ?? 1)

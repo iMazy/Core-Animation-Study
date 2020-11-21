@@ -47,7 +47,7 @@ class TimeOffsetViewController: UIViewController {
         plainLayer.frame = CGRect(x: 0, y: 0, width: 64, height: 64)
         plainLayer.position = CGPoint(x: 30, y: 150)
         plainLayer.contents = UIImage(named: "plain")?.cgImage
-        plainLayer.transform = CATransform3DMakeRotation(CGFloat(M_PI_4/2), 0, 0, 1)
+        plainLayer.transform = CATransform3DMakeRotation(CGFloat(Double.pi / 4/2), 0, 0, 1)
         containerView.layer.addSublayer(plainLayer)
 
         timeOffsetSlider.addTarget(self, action: #selector(updateSliders), for: .valueChanged)
@@ -55,7 +55,7 @@ class TimeOffsetViewController: UIViewController {
         
     }
 
-    func updateSliders(slider: UISlider) {
+    @objc func updateSliders(slider: UISlider) {
         
         let value = String(format: "%.02f", slider.value)
         if slider == timeOffsetSlider {
@@ -72,7 +72,7 @@ class TimeOffsetViewController: UIViewController {
         animation.speed = speedSlider.value
         animation.duration = 1.0
         animation.path = bezierPath.cgPath
-        animation.rotationMode = kCAAnimationRotateAuto
+        animation.rotationMode = CAAnimationRotationMode.rotateAuto
         animation.isRemovedOnCompletion = false
         
         if isFillMode {
@@ -82,7 +82,7 @@ class TimeOffsetViewController: UIViewController {
              kCAFillModeBoth
              kCAFillModeRemoved // default
              */
-            animation.fillMode = kCAFillModeForwards
+            animation.fillMode = CAMediaTimingFillMode.forwards
         }
         
         plainLayer.add(animation, forKey: nil)

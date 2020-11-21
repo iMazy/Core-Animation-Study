@@ -19,7 +19,7 @@ class M34ViewController: UIViewController {
         /// d代表了想象中视角相机和屏幕之间的距离，以像素为单位
         /// d越小，变化越大
         transform3D.m34 = -1.0/200
-        transform3D = CATransform3DRotate(transform3D, CGFloat(M_PI_4), 0, 1, 0)
+        transform3D = CATransform3DRotate(transform3D, CGFloat(Double.pi/4), 0, 1, 0)
         imageView.layer.transform = transform3D
     }
 

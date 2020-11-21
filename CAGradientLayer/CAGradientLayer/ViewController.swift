@@ -12,11 +12,8 @@ class ViewController: UIViewController {
 
     /*
      CAGradientLayer是用来生成两种或更多颜色平滑渐变的
-     
      */
-    
     @IBOutlet weak var containerView: UIStackView!
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -101,9 +98,7 @@ class ViewController: UIViewController {
         gradientLayer.startPoint = CGPoint(x: 0, y: 0)
         gradientLayer.endPoint = CGPoint(x: 1, y: 1)
         
-
     }
-    
     
     func addGradient(with index: Int, colors: [Any]?,startPoint: CGPoint,endPoint:CGPoint) {
         // create gradient layer and add it to containerView
@@ -121,7 +116,5 @@ class ViewController: UIViewController {
         gradientLayer.endPoint = endPoint
         
     }
-
-
 }
 

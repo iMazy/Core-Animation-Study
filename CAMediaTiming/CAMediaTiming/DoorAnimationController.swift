@@ -22,7 +22,7 @@ class DoorAnimationController: UIViewController {
         
         let animation = CABasicAnimation()
         animation.keyPath = "transform.rotation.y"
-        animation.toValue = -M_PI_2
+        animation.toValue = -Double.pi / 2
         animation.duration = 2
         // 动画重复一个指定的时间，而不是指定次数
         animation.repeatDuration = 14.0

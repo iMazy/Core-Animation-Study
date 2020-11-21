@@ -33,14 +33,14 @@ class ViewController: UIViewController {
         plainLayer.frame = CGRect(x: 0, y: 0, width: 64, height: 64)
         plainLayer.position = CGPoint(x: 30, y: 150)
         plainLayer.contents = UIImage(named: "plain")?.cgImage
-        plainLayer.transform = CATransform3DMakeRotation(CGFloat(M_PI_4/2), 0, 0, 1)
+        plainLayer.transform = CATransform3DMakeRotation(CGFloat(Double.pi / 4 / 2), 0, 0, 1)
         containerView.layer.addSublayer(plainLayer)
         
         let animation = CAKeyframeAnimation()
         animation.keyPath = "position"
         animation.duration = 4.0
         animation.path = bezierPath.cgPath
-        animation.rotationMode = kCAAnimationRotateAuto
+        animation.rotationMode = CAAnimationRotationMode.rotateAuto
         animation.repeatCount = MAXFLOAT
         plainLayer.add(animation, forKey: nil)
         
@@ -75,7 +75,7 @@ class ViewController: UIViewController {
         let animation = CAKeyframeAnimation()
         animation.keyPath = "position"
         animation.path = bezierPath.cgPath
-        animation.rotationMode = kCAAnimationRotateAuto
+        animation.rotationMode = CAAnimationRotationMode.rotateAuto
         
         let animation2 = CABasicAnimation()
         animation2.keyPath = "backgroundColor"
@@ -87,7 +87,5 @@ class ViewController: UIViewController {
         groupAnimation.repeatCount = MAXFLOAT
         plainLayer.add(groupAnimation, forKey: nil)
     }
-
-
 }
 

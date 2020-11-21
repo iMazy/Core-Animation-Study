@@ -24,8 +24,8 @@ class ViewController: UIViewController {
         
         var perspective = CATransform3DIdentity
         perspective.m34 = -1.0/500
-        perspective = CATransform3DRotate(perspective, CGFloat(-M_PI_4), 1, 0, 0)
-        perspective = CATransform3DRotate(perspective, CGFloat(-M_PI_4), 0, 1, 0)
+        perspective = CATransform3DRotate(perspective, CGFloat(-Double.pi / 4), 1, 0, 0)
+        perspective = CATransform3DRotate(perspective, CGFloat(-Double.pi / 4), 0, 1, 0)
         containerView.layer.sublayerTransform = perspective
         
         let distance: CGFloat = 100
@@ -36,27 +36,27 @@ class ViewController: UIViewController {
         
         // add cube face2
         transform = CATransform3DMakeTranslation(distance, 0, 0)
-        transform = CATransform3DRotate(transform, CGFloat(M_PI_2), 0, 1, 0)
+        transform = CATransform3DRotate(transform, CGFloat(Double.pi / 2), 0, 1, 0)
         addFace(with: face2, transform: transform)
         
         // add cube face3
         transform = CATransform3DMakeTranslation(0, -distance, 0)
-        transform = CATransform3DRotate(transform, CGFloat(M_PI_2), 1, 0, 0)
+        transform = CATransform3DRotate(transform, CGFloat(Double.pi / 2), 1, 0, 0)
         addFace(with: face3, transform: transform)
         
         // add cube face4
         transform = CATransform3DMakeTranslation(0, distance, 0)
-        transform = CATransform3DRotate(transform, CGFloat(-M_PI_2), 1, 0, 0)
+        transform = CATransform3DRotate(transform, CGFloat(-Double.pi / 2), 1, 0, 0)
         addFace(with: face4, transform: transform)
         
         // add cube face5
         transform = CATransform3DMakeTranslation( -distance, 0, 0)
-        transform = CATransform3DRotate(transform, CGFloat(-M_PI_2), 0, 1, 0)
+        transform = CATransform3DRotate(transform, CGFloat(-Double.pi / 2), 0, 1, 0)
         addFace(with: face5, transform: transform)
         
         // add cube face6
         transform = CATransform3DMakeTranslation(0, 0, -distance)
-        transform = CATransform3DRotate(transform, CGFloat(M_PI), 0, 1, 0)
+        transform = CATransform3DRotate(transform, CGFloat(Double.pi), 0, 1, 0)
         addFace(with: face6, transform: transform)
         
         
@@ -73,9 +73,6 @@ class ViewController: UIViewController {
         face.center = CGPoint(x: size.width/2, y: size.height/2)
         
         face.layer.transform = transform
-
     }
-
-
 }
 

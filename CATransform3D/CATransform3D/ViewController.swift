@@ -22,7 +22,7 @@ class ViewController: UIViewController {
         
         /// 3D旋转，参数一：角度，参数二：绕着x轴旋转，参数三：绕着y轴旋转，参数四：绕着z轴旋转
         /// 此方法可以获取一个视图的对称视图
-        let transform3D = CATransform3DMakeRotation(CGFloat(M_PI), 1, 1, 1)
+        let transform3D = CATransform3DMakeRotation(CGFloat(Double.pi), 1, 1, 1)
         imageViewA.layer.transform = transform3D
         
     }

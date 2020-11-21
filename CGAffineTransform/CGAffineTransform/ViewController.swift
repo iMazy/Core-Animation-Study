@@ -23,7 +23,7 @@ class ViewController: UIViewController {
     var translation: CGFloat = 0
     
     @IBAction func imageViewA_Action() {
-        angle = angle + CGFloat(M_PI_4)
+        angle = angle + CGFloat(Double.pi / 4)
         let transform = CGAffineTransform(rotationAngle: angle)
         imageViewA.layer.setAffineTransform(transform)
     }
@@ -49,7 +49,7 @@ class ViewController: UIViewController {
         var transform = CGAffineTransform.identity
         
         transform = transform.scaledBy(x: 0.5, y: 0.5)
-        transform = transform.rotated(by: CGFloat(M_PI_4))
+        transform = transform.rotated(by: CGFloat(Double.pi / 4))
         transform = transform.translatedBy(x: 200, y: 50)
         
         imageViewD.layer.setAffineTransform(transform)
